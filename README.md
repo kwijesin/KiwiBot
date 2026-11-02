@@ -8,6 +8,8 @@ It's an orchestration of agents, scripts, services, hardware and UI apps that **
 
 ## Start here
 
+**Agents:** read [AGENTS.md](AGENTS.md) first.
+
 1. [Decisions](docs/decisions/): what KiwiBot is and why (0001–0027).
 2. [Deferred decisions](docs/decisions/deferred.md): what's been consciously put off.
 3. [Task list](docs/tasks/task-list.md): what to build next.
@@ -17,6 +19,8 @@ It's an orchestration of agents, scripts, services, hardware and UI apps that **
 ```
 KiwiBot/
 ├── README.md               ← you are here
+├── AGENTS.md               ← entry point and working rules for any agent
+├── CLAUDE.md               ← imports AGENTS.md for Claude
 └── docs/
     ├── README.md           ← documentation index
     ├── decisions/          ← decisions (NNNN-*.md), deferred register, planning process

@@ -7,20 +7,9 @@ The goal of this list is **0022: get the self-improvement loop running.** M0 boo
 
 ---
 
-## How to work this list (for the agent session)
+## How to work this list
 
-1. **Read first:** the root `README.md`, every decision in `docs/decisions/` (0001–0027), `docs/decisions/deferred.md`, and this file.
-2. **Pick** the first task marked `☐ Todo` whose dependencies are all `☑ Done`.
-3. **Plan, then execute.** Present the plan for the task and wait for my go-ahead before executing. This is the 5-80-15 split (0021): this list is my 5%, you do the 80%, then stop for my review before the last 15%.
-4. **Keep it small (0017).** One task means one well-bounded change: one branch, one commit series, one review. If a task grows, split it and add the new tasks here.
-5. **Don't decide silently.** If the work needs a decision that isn't in `docs/decisions/`, draft it from `0000-template.md` with status **Proposed** and ask me (the 0019 decision loop). If something can wait, add it to `deferred.md`.
-6. **Test what you build (0012),** including prompt-based work where you can. There's no sandbox yet (0027).
-7. **Finish with a review note:** what changed, why, consequences, test results, what needs my approval, and open questions. T06 defines the proper format; until then, use those headings.
-8. **Update this file:** the task's status, plus any new tasks discovered along the way.
-
-**Approval:** until T03 sets the initial approval rules (0025), **every task needs my approval before it's merged or marked done.**
-
-**Daily rhythm (0022):** I review in the morning and again later in the day. Leave work at a clean stopping point with a review note ready.
+The working rules (how to pick, plan, test, review and approve tasks) live in [AGENTS.md](../../AGENTS.md) at the repo root.
 
 **Status:** `☐ Todo` · `◐ In progress` · `⏸ Awaiting review` · `☑ Done` · `✕ Dropped`
 **Size:** S (under an hour of agent work) · M (one session) · L (should probably be split)
@@ -40,12 +29,13 @@ The goal of this list is **0022: get the self-improvement loop running.** M0 boo
 - **Notes:** Branching conventions are deferred (D07, end of M1). Commit directly to `main`.
 
 ### T02: Create an agent entry point at the repo root
-- **Status:** ☐ Todo · **Size:** S · **Depends on:** T01
+- **Status:** ⏸ Awaiting review · **Size:** S · **Depends on:** T01
 - **Decisions:** 0020 (model-agnostic), 0026 (intake via an agent at the root), 0010, 0011
 - **Goal:** Any agent, not just Claude, opened at the repo root knows what KiwiBot is, where everything lives and how to work.
 - **Done when:**
-  - [ ] A model-agnostic entry file exists (proposed: `AGENTS.md`, plus a thin `CLAUDE.md` that points to it; confirm with me). It covers a one-paragraph summary of KiwiBot, a map of where decisions, deferred items, tasks, reviews and history live, and the working rules from "How to work this list" above.
-  - [ ] **Test (0012):** a fresh agent session at the root, asked *"what should you work on next, and how?"*, names the right task and rules without extra guidance. Record the result.
+  - [x] A model-agnostic entry file exists: `AGENTS.md`, plus a one-line `CLAUDE.md` (`@AGENTS.md`), confirmed with me. It covers a one-paragraph summary of KiwiBot, a map of where decisions, deferred items, tasks, reviews and history live, and the working rules (moved here from this file).
+  - [x] **Test (0012):** a fresh agent session at the root, asked *"what should you work on next, and how?"*, names the right task and rules without extra guidance. Record the result.
+- **Test result (2026-11-02): pass.** A fresh Claude subagent, given only that question, read `AGENTS.md`, found that T02 was awaiting review and that T03 depends on it, and held at the review gate instead of starting T03. It then described T03 correctly: draft 0028, plan first, one commit to `main`, a review note with the right headings, then update D05 and `AGENTS.md`. **Limitation:** no non-Claude agent CLI was installed, so the "model-agnostic" part is untested.
 
 ### T03: Decide the initial approval rules
 - **Status:** ☐ Todo · **Size:** S · **Depends on:** T02
