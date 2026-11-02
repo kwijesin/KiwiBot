@@ -26,7 +26,7 @@ KiwiBot is the user's personal assistant, efficiency accelerator and extra inter
 3. **Plan, then execute.** Present the plan for the task and wait for the user's go-ahead before executing. This is the 5-80-15 split ([0021](docs/decisions/0021-human-in-the-loop.md)): the task list is the user's 5%, you do the 80%, then stop for review before the last 15%.
 4. **Keep it small** ([0017](docs/decisions/0017-small-increments.md)). One task means one well-bounded change and one review. If a task grows, split it and add the new tasks to the task list.
 5. **Don't decide silently.** If the work needs a decision that isn't in `docs/decisions/`, draft it from `0000-template.md` with status **Proposed** and ask the user (the [0019](docs/decisions/0019-self-improvement-pipeline.md) decision loop). If something can wait, add it to `deferred.md`.
-6. **Test what you build** ([0012](docs/decisions/0012-test-everything.md)), including prompt-based work where you can. There's no sandbox yet ([0027](docs/decisions/0027-early-features-agent-driven.md)).
+6. **Test what you build** ([0012](docs/decisions/0012-test-everything.md)), including prompt-based work where you can. There's no sandbox yet ([0027](docs/decisions/0027-early-features-agent-driven.md)). **Until the testing framework exists (T08), tests are only done where a task's done-when list asks for one.**
 7. **Finish with a review note** under these headings: what changed, why, consequences, test results, what needs approval, and open questions. T06 will define the proper format.
 8. **Update the task list:** the task's status, plus any new tasks discovered along the way.
 

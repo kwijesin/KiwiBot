@@ -36,5 +36,6 @@ Short records of significant decisions, so future-you knows *why*.
 | 0025 | [Approval tiers](0025-approval-tiers.md) | philosophy, features | Accepted |
 | 0026 | [Decision intake from any input](0026-decision-intake.md) | features, process | Accepted |
 | 0027 | [Early features are agent-driven; self-restart and sandboxing come later](0027-early-features-agent-driven.md) | roadmap, architecture | Accepted |
+| 0028 | [Initial approval rules](0028-initial-approval-rules.md) | process, features | Proposed |
 
 **Tags:** philosophy, features, architecture, implementation, plus process, identity, hardware, standards, security and roadmap so far. New tags are added as they come up.
