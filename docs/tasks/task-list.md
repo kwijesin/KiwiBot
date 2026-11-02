@@ -30,14 +30,14 @@ The goal of this list is **0022: get the self-improvement loop running.** M0 boo
 ## M0: Bootstrap
 
 ### T01: Initialize git and a private GitHub repository
-- **Status:** ☐ Todo · **Size:** S · **Depends on:** none
+- **Status:** ☑ Done · **Size:** S · **Depends on:** none
 - **Decisions:** 0006, 0014 (D34: secrets out of git), 0017
 - **Goal:** Put KiwiBot under version control from the start, privately.
 - **Done when:**
-  - [ ] `git init` at the repo root, with a `.gitignore` covering `.env`, local config, `data/`, model files and OS/editor clutter.
-  - [ ] A **private** GitHub repository exists and the current docs are committed and pushed as the initial commit.
-  - [ ] The repository name is confirmed with me (`KiwiBot`?), and so is whether to rename the local `LuluAgent` folder.
-- **Notes:** Branching conventions aren't decided yet (D07, T04). Commit directly to `main` for this task only.
+  - [x] `git init` at the repo root, with a `.gitignore` covering `.env`, local config, `data/`, model files and OS/editor clutter.
+  - [x] A **private** GitHub repository exists and the current docs are committed and pushed as the initial commit.
+  - [x] The repository name is confirmed with me (`KiwiBot`?), and so is whether to rename the local `LuluAgent` folder. → `KiwiBot` (`kwijesin/KiwiBot`); local folder renamed to `KiwiBot`.
+- **Notes:** Branching conventions are deferred (D07, end of M1). Commit directly to `main`.
 
 ### T02: Create an agent entry point at the repo root
 - **Status:** ☐ Todo · **Size:** S · **Depends on:** T01
@@ -62,14 +62,14 @@ The goal of this list is **0022: get the self-improvement loop running.** M0 boo
 
 ### T04: Decide the bootstrap workflow
 - **Status:** ☐ Todo · **Size:** M · **Depends on:** T03
-- **Decisions:** 0006, 0016, 0017, 0021, 0022 → resolves **D06, D07**
+- **Decisions:** 0006, 0016, 0017, 0021, 0022 → resolves **D06**
 - **Goal:** Settle how work flows before KiwiBot's own systems exist.
 - **Done when:**
-  - [ ] One or two decisions are drafted and accepted, covering:
+  - [ ] A decision is drafted and accepted, covering:
     - **Tasks:** confirm this markdown file as the interim task list, and how tasks are added and updated.
-    - **Reviews:** where they happen (GitHub PRs, markdown review notes in the repo, or both) and how the morning and later-day reviews work in practice (0022).
-    - **Git:** branch naming (e.g. one branch per task), commit style, versioning (major/minor), milestone tags, and a guideline for maximum change size (0017).
-  - [ ] D06 and D07 are marked decided, and the agent entry point is updated.
+    - **Reviews:** where they happen and how the morning and later-day reviews work in practice (0022). (No PRs while everything goes straight to `main`; see the note below.)
+  - [ ] D06 is marked decided, and the agent entry point is updated.
+- **Notes:** Git conventions (**D07**: branching, versioning, tags, change size) are deferred to the end of M1 (T13). Until then: everything is committed straight to `main`, **one commit per task**.
 
 ### T05: Decide the initial feature types and coding conventions
 - **Status:** ☐ Todo · **Size:** S · **Depends on:** T04
@@ -153,7 +153,8 @@ The goal of this list is **0022: get the self-improvement loop running.** M0 boo
 - **Done when:**
   - [ ] The item has been through every stage, with reviews.
   - [ ] A short retrospective lists what to improve in the loop, and those improvements become new tasks (via T11).
-  - [ ] M1 is complete and tagged as a version (per T04).
+  - [ ] **D07** (branching, commit style, versioning, milestone tags, change-size guideline) is decided, informed by how M1 went.
+  - [ ] M1 is complete and tagged as a version (per D07).
 
 ---
 

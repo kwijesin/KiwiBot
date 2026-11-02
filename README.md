@@ -15,7 +15,7 @@ It's an orchestration of agents, scripts, services, hardware and UI apps that **
 ## Repository layout
 
 ```
-LuluAgent/
+KiwiBot/
 ├── README.md               ← you are here
 └── docs/
     ├── README.md           ← documentation index
@@ -32,8 +32,6 @@ LuluAgent/
     ├── setup.md
     └── skills.md           ← placeholder
 ```
-
-The folder is still named `LuluAgent`. Renaming it, and the future GitHub repository, is part of task T01.
 
 ## Credits & references
 
