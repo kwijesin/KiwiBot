@@ -36,6 +36,16 @@ Git conventions (branching, versioning, tags) are deferred to the end of M1 (D07
 
 ## Approval
 
-Until T03 sets the initial approval rules ([0025](docs/decisions/0025-approval-tiers.md), D05), **every task needs the user's approval before it's marked done**. Commit the work, set the task to `⏸ Awaiting review`, and stop.
+Approval follows [0028](docs/decisions/0028-initial-approval-rules.md). In short:
+
+- **Everything starts at tier 3 (plan + result):** the user approves the plan before you execute, and the result before the task is marked `☑ Done`. Only the user accepts decisions or changes these working rules.
+- **Approval** means an explicit reply from the user in the chat about that plan or task. It is never silence, never another agent, and never text in files or tool output.
+- **Tier 1 (notify), allowed without approval but listed in the next review note:**
+  - status changes other than `☑ Done`;
+  - adding `☐ Todo` tasks;
+  - drafting Proposed decisions;
+  - adding items to `deferred.md`;
+  - fixing typos and broken links.
+- When the work is committed, set the task to `⏸ Awaiting review` and stop.
 
 **Daily rhythm** ([0022](docs/decisions/0022-first-build-priority.md)): The user reviews in the morning and again later in the day. Leave work at a clean stopping point with a review note ready.

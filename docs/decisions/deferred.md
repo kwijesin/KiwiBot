@@ -14,7 +14,7 @@ This is the live register of decisions that have been **consciously put off**. E
 | D02 | **Sandbox** for testing agent-based features | 0012, 0027 | What it contains (real data or fixtures, real devices or mocks) and how it stays in sync. | After D01; needed before approval can be relaxed much |
 | D03 | **Decision intake details** | 0026 | Any input method; early on, an agent pointed at the repo root. | Once the self-improvement loop is finished |
 | D04 | **Working schedule** around the build model's usage window | 0022 | Overnight runs, scheduled bursts, etc. | TBD |
-| D05 | **Initial approval rules** (the "early decision" in 0025) | 0025 | What needs approval at the start and what form approval takes. | **Now.** Task list T03 |
+| D05 | **Initial approval rules** (the "early decision" in 0025) | 0025 | What needs approval at the start and what form approval takes. | **Decided → [0028](0028-initial-approval-rules.md)** |
 | D06 | **Bootstrap workflow:** where tasks and reviews live before KiwiBot's own systems exist | 0016, 0021, 0022 | Markdown task list in the repo (in use now: [tasks/task-list.md](../tasks/task-list.md)); reviews as GitHub pull requests and/or markdown review notes. | **Now.** Task list T04 |
 | D07 | **Branching, versioning and merge conventions** | 0006, 0017 | Branch per task, semantic versioning, milestone tags. **Interim (until decided):** commit straight to `main`, one commit per task. | End of M1 (task list T13) |
 

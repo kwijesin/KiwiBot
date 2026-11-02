@@ -1,6 +1,6 @@
 # 0028. Initial approval rules
 
-- **Status:** Proposed
+- **Status:** Accepted
 - **Date:** 2026-11-02
 - **Tags:** process, features
 

@@ -38,7 +38,7 @@ The working rules (how to pick, plan, test, review and approve tasks) live in [A
 - **Test result (2026-11-02): pass.** A fresh Claude subagent, given only that question, read `AGENTS.md`, found that T02 was awaiting review and that T03 depends on it, and held at the review gate instead of starting T03. It then described T03 correctly: draft 0028, plan first, one commit to `main`, a review note with the right headings, then update D05 and `AGENTS.md`. **Limitation:** no non-Claude agent CLI was installed, so the "model-agnostic" part is untested.
 
 ### T03: Decide the initial approval rules
-- **Status:** ⏸ Awaiting review · **Size:** S · **Depends on:** T02
+- **Status:** ☑ Done · **Size:** S · **Depends on:** T02
 - **Decisions:** 0021, 0025 → resolves **D05**
 - **Goal:** Make the "early decision" that 0025 calls for.
 - **Done when:**
@@ -48,7 +48,7 @@ The working rules (how to pick, plan, test, review and approve tasks) live in [A
     - What counts as approval (a PR approval, a reply on the review note)?
     - What, if anything, may proceed without approval (e.g. task status updates, typo fixes)?
     - How do later decisions relax the tiers?
-  - [ ] I accept it. D05 is marked **Decided → 0028**, and the agent entry point is updated.
+  - [x] I accept it. D05 is marked **Decided → 0028**, and the agent entry point is updated.
 
 ### T04: Decide the bootstrap workflow
 - **Status:** ☐ Todo · **Size:** M · **Depends on:** T03
