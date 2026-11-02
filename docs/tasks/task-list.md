@@ -29,7 +29,7 @@ The working rules (how to pick, plan, test, review and approve tasks) live in [A
 - **Notes:** Branching conventions are deferred (D07, end of M1). Commit directly to `main`.
 
 ### T02: Create an agent entry point at the repo root
-- **Status:** ⏸ Awaiting review · **Size:** S · **Depends on:** T01
+- **Status:** ☑ Done · **Size:** S · **Depends on:** T01
 - **Decisions:** 0020 (model-agnostic), 0026 (intake via an agent at the root), 0010, 0011
 - **Goal:** Any agent, not just Claude, opened at the repo root knows what KiwiBot is, where everything lives and how to work.
 - **Done when:**

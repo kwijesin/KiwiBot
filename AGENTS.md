@@ -4,7 +4,7 @@ This is the entry point for any agent (Claude or any other model, per [0020](doc
 
 ## What KiwiBot is
 
-KiwiBot is its owner's personal assistant, efficiency accelerator and extra interface between the owner, their environment and the digital world ([0002](docs/decisions/0002-purpose.md)). It's an orchestration of agents, scripts, services, hardware and UI apps that **builds and improves itself as it's used** ([0004](docs/decisions/0004-orchestration-and-self-improvement.md), [0024](docs/decisions/0024-building-is-using.md)). Planning is complete. The current priority is getting the **self-improvement loop** running (intake → decisions → plan → tasks → execution → review), before any assistant features ([0022](docs/decisions/0022-first-build-priority.md)).
+KiwiBot is the user's personal assistant, efficiency accelerator and extra interface between the user, their environment and the digital world ([0002](docs/decisions/0002-purpose.md)). It's an orchestration of agents, scripts, services, hardware and UI apps that **builds and improves itself as it's used** ([0004](docs/decisions/0004-orchestration-and-self-improvement.md), [0024](docs/decisions/0024-building-is-using.md)). Planning is complete. The current priority is getting the **self-improvement loop** running (intake → decisions → plan → tasks → execution → review), before any assistant features ([0022](docs/decisions/0022-first-build-priority.md)).
 
 ## Where everything lives
 
@@ -23,19 +23,19 @@ KiwiBot is its owner's personal assistant, efficiency accelerator and extra inte
 
 1. **Read first:** [README.md](README.md), every decision in [docs/decisions/](docs/decisions/), [deferred.md](docs/decisions/deferred.md) and the [task list](docs/tasks/task-list.md).
 2. **Pick** the first task marked `☐ Todo` whose dependencies are all `☑ Done`. Tasks marked `⏸ Awaiting review` count as not done.
-3. **Plan, then execute.** Present the plan for the task and wait for the owner's go-ahead before executing. This is the 5-80-15 split ([0021](docs/decisions/0021-human-in-the-loop.md)): the task list is the owner's 5%, you do the 80%, then stop for review before the last 15%.
+3. **Plan, then execute.** Present the plan for the task and wait for the user's go-ahead before executing. This is the 5-80-15 split ([0021](docs/decisions/0021-human-in-the-loop.md)): the task list is the user's 5%, you do the 80%, then stop for review before the last 15%.
 4. **Keep it small** ([0017](docs/decisions/0017-small-increments.md)). One task means one well-bounded change and one review. If a task grows, split it and add the new tasks to the task list.
-5. **Don't decide silently.** If the work needs a decision that isn't in `docs/decisions/`, draft it from `0000-template.md` with status **Proposed** and ask the owner (the [0019](docs/decisions/0019-self-improvement-pipeline.md) decision loop). If something can wait, add it to `deferred.md`.
+5. **Don't decide silently.** If the work needs a decision that isn't in `docs/decisions/`, draft it from `0000-template.md` with status **Proposed** and ask the user (the [0019](docs/decisions/0019-self-improvement-pipeline.md) decision loop). If something can wait, add it to `deferred.md`.
 6. **Test what you build** ([0012](docs/decisions/0012-test-everything.md)), including prompt-based work where you can. There's no sandbox yet ([0027](docs/decisions/0027-early-features-agent-driven.md)).
 7. **Finish with a review note** under these headings: what changed, why, consequences, test results, what needs approval, and open questions. T06 will define the proper format.
 8. **Update the task list:** the task's status, plus any new tasks discovered along the way.
 
 ## Git (interim)
 
-Git conventions (branching, versioning, tags) are deferred to the end of M1 (D07). Until then, **commit straight to `main`, one commit per task**.
+Git conventions (branching, versioning, tags) are deferred to the end of M1 (D07). Until then, **commit straight to `main`, one commit per task**, and push to `origin` once the task's commit is made.
 
 ## Approval
 
-Until T03 sets the initial approval rules ([0025](docs/decisions/0025-approval-tiers.md), D05), **every task needs the owner's approval before it's marked done**. Commit the work, set the task to `⏸ Awaiting review`, and stop.
+Until T03 sets the initial approval rules ([0025](docs/decisions/0025-approval-tiers.md), D05), **every task needs the user's approval before it's marked done**. Commit the work, set the task to `⏸ Awaiting review`, and stop.
 
-**Daily rhythm** ([0022](docs/decisions/0022-first-build-priority.md)): The owner reviews in the morning and again later in the day. Leave work at a clean stopping point with a review note ready.
+**Daily rhythm** ([0022](docs/decisions/0022-first-build-priority.md)): The user reviews in the morning and again later in the day. Leave work at a clean stopping point with a review note ready.
