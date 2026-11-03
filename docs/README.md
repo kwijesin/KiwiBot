@@ -6,6 +6,7 @@
 | [decisions/deferred.md](decisions/deferred.md) | Decisions consciously put off, with when to revisit them |
 | [tasks/task-list.md](tasks/task-list.md) | The current task list (a bootstrap until the custom task system exists) |
 | [reviews/](reviews/) | One review note per task (0029) |
+| [dependencies.md](dependencies.md) | Every external resource KiwiBot relies on (0030) |
 | [architecture.md](architecture.md) | What's decided about the system's shape; mostly a placeholder |
 | [models.md](models.md) | Model-agnostic setup, frontier vs local models |
 | [hardware.md](hardware.md) | Host, mirror and satellite hardware |
