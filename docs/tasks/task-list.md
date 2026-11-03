@@ -115,7 +115,7 @@ The working rules (how to pick, plan, test, review and approve tasks) live in [A
   - [x] The feature exists.
 
 ### T12: Task-execution workflow
-- **Status:** ⏸ Awaiting review · **Size:** S · **Depends on:** T06, T07
+- **Status:** ☑ Done · **Size:** S · **Depends on:** T06, T07
 - **Decisions:** 0019 (step 5), 0021 (5-80-15), 0017, 0012
 - **Goal:** Formalize "How to work this list" as a feature or agent instruction set: pick a task, plan, get approval if required, execute in small increments, test, write the review note, and stop at about 80% for review.
 - **Done when:**
@@ -123,7 +123,7 @@ The working rules (how to pick, plan, test, review and approve tasks) live in [A
   - [x] The next task (T08) is carried out using it.
 
 ### T08: Testing framework v0
-- **Status:** ⏸ Awaiting review · **Size:** M · **Depends on:** T05, T07, T09, T10, T11, T12
+- **Status:** ☑ Done · **Size:** M · **Depends on:** T05, T07, T09, T10, T11, T12
 - **Decisions:** 0012, 0013, 0027 (no sandbox yet)
 - **Done when:**
   - [x] A testing guide exists:
@@ -142,7 +142,8 @@ The working rules (how to pick, plan, test, review and approve tasks) live in [A
 - **Status:** ☐ Todo · **Size:** M · **Depends on:** T08, T09, T10, T11, T12
 - **Decisions:** 0022, 0018
 - **Goal:** Push one real item through the whole loop: intake → decision loop → plan → tasks → execution → review.
-- **Suggested item:** **D21, the speech-to-text engine for voice-to-text input** (0018, an early core feature). It's small, real, and leads straight into M2.
+- **Suggested item:** **D21, the speech-to-text engine for voice-to-text input** (0018, an early core feature). It's small, real, and leads straight into M2. **The user will choose the item, and the run happens in a new session.**
+- **Also pending for these runs:** the round 3 decision loops (items 4.2, 4.3, 4.4, 4.6, and 4.5 on its own), doc sync (4.9), and the three unrun test cases (decision-loop, synthesis, task-planner). See [round-03-summary.md](../decisions/planning/round-03-summary.md).
 - **Done when:**
   - [ ] The item has been through every stage, with reviews. This is the **first task to use the testing framework** (T08): every stage's output is tested.
   - [ ] A short retrospective lists what to improve in the loop, and those improvements become new tasks (via T11).

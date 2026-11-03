@@ -17,7 +17,7 @@ One review note per task, kept in git so the review history isn't lost ([0029](.
 | [T09: decision-loop feature](T09-decision-loop.md) | ☑ Done |
 | [T10: synthesis feature](T10-synthesis.md) | ☑ Done |
 | [T11: task-planner feature](T11-task-planner.md) | ☑ Done |
-| [T12: task-runner feature](T12-task-runner.md) | ⏸ Awaiting review |
-| [T08: testing framework v0](T08-testing-framework.md) | ⏸ Awaiting review |
+| [T12: task-runner feature](T12-task-runner.md) | ☑ Done |
+| [T08: testing framework v0](T08-testing-framework.md) | ☑ Done |
 
 T01–T03 were reviewed in the chat only, before review files existed. [M0-bootstrap.md](M0-bootstrap.md) covers them.

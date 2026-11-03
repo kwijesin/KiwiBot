@@ -1,7 +1,7 @@
 # Review: T08, testing framework v0
 
-- **Task:** T08 · **Status:** ⏸ Awaiting review · **Date:** 2026-11-03
-- **Commits:** see the T08 commit on `main`
+- **Task:** T08 · **Status:** ☑ Done · **Date:** 2026-11-03
+- **Commits:** `0a3cc2e`, plus the closing commit
 - **Tier:** 3 (plan + result)
 
 ## What changed
@@ -46,4 +46,4 @@
 2. Should the "from T13 on, every new or changed feature comes with a test case" rule go into `AGENTS.md` now?
 
 ## Outcome
-*(Filled in when the task is closed.)*
+Closed on 2026-11-03. The user said "activate feature test … and then lets get an end to end run of the loop going". `feature-test` set to `active` (tier 1), with the guide, template and cases accepted with it. Open question 2 (the "from T13 on" testing rule in `AGENTS.md`) wasn't answered, so `AGENTS.md` is unchanged. T13 tests its own outputs under its done-when list anyway.

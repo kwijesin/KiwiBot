@@ -1,7 +1,7 @@
 # Review: T12, task-execution workflow
 
-- **Task:** T12 · **Status:** ⏸ Awaiting review · **Date:** 2026-11-03
-- **Commits:** see the T12 commit on `main`
+- **Task:** T12 · **Status:** ☑ Done · **Date:** 2026-11-03
+- **Commits:** `9c95ff4`, plus the closing commit
 - **Tier:** 3 (plan + result)
 
 ## What changed
@@ -43,4 +43,4 @@ None (T08). The second done-when item checks it during T08.
 2. T12 can't close fully until T08 is carried out using it. Should I close T12 now with that item noted as "checked in T08", or keep it at `⏸` until T08 is done?
 
 ## Outcome
-*(Filled in when the task is closed.)*
+Approved by the user in the chat on 2026-11-03 ("activate feature test and task runner, close t12"). `task-runner` set to `active` (tier 3), and the `AGENTS.md` rewrite accepted. Its last done-when item was met by running T08 with `task-runner`.

@@ -8,7 +8,7 @@ description: >-
   close a task after the user approves it.
 metadata:
   type: prompt
-  status: draft
+  status: active
   approval_tier: "3"
   model_class: frontier
   model_needs: file_read,file_write,shell
