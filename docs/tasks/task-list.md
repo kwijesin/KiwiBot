@@ -196,12 +196,12 @@ The working rules (how to pick, plan, test, review and approve tasks) live in [A
 - **Notes:** Added by task-planner from 0036 (T13, inbox decision loop).
 
 ### T22: Inbox count at session start
-- **Status:** ☐ Todo · **Size:** S · **Depends on:** T19
+- **Status:** ⏸ Awaiting review · **Size:** S · **Depends on:** T19
 - **Decisions:** 0036, 0029
 - **Goal:** A session start reports how many items are waiting in the inbox, right after the review queue.
 - **Done when:**
-  - [ ] `review-queue` ends its output with one line: the number of items in `inbox/` (excluding `README.md`), or "The inbox is empty."
-  - [ ] Its `mixed-queue` test case (or a new case) covers the line, and passes.
+  - [x] `review-queue` ends its output with one line: the number of items in `inbox/` (excluding `README.md`), or "The inbox is empty."
+  - [x] Its `mixed-queue` test case (or a new case) covers the line, and passes.
 - **Notes:** Added by task-planner from 0036 (T13, inbox decision loop).
 
 ---
