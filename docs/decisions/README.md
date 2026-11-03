@@ -42,5 +42,8 @@ Short records of significant decisions, so future-you knows *why*.
 | 0031 | [Review format](0031-review-format.md) | process | Accepted |
 | 0032 | [Style framework v0: features as Agent Skills](0032-style-framework-v0.md) | standards, architecture | Accepted |
 | 0033 | [A feature's approval tier is set when it's accepted](0033-feature-tier-set-on-acceptance.md) | process, features | Accepted |
+| 0034 | [An inbox for human-written rough ideas](0034-inbox.md) | features, process | Accepted |
+| 0035 | [Inbox v0: a folder of text files](0035-inbox-v0-folder.md) | features, implementation | Accepted |
+| 0036 | [Inbox triage](0036-inbox-triage.md) | features, process | Accepted |
 
 **Tags:** philosophy, features, architecture, implementation, plus process, identity, hardware, standards, security and roadmap so far. New tags are added as they come up.

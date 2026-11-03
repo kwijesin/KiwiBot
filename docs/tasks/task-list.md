@@ -139,7 +139,7 @@ The working rules (how to pick, plan, test, review and approve tasks) live in [A
 - **Notes:** Moved after T12 during T07 (user's call), so T09–T12 can go ahead without tests. The task ID is unchanged (0029: no renumbering).
 
 ### T13: First end-to-end run of the loop
-- **Status:** ☐ Todo · **Size:** M · **Depends on:** T08, T09, T10, T11, T12
+- **Status:** ◐ In progress · **Size:** M · **Depends on:** T08, T09, T10, T11, T12
 - **Decisions:** 0022, 0018
 - **Goal:** Push one real item through the whole loop: intake → decision loop → plan → tasks → execution → review.
 - **Suggested item:** **D21, the speech-to-text engine for voice-to-text input** (0018, an early core feature). It's small, real, and leads straight into M2. **The user will choose the item, and the run happens in a new session.**

@@ -12,7 +12,7 @@ This is the live register of decisions that have been **consciously put off**. E
 |---|---|---|---|---|
 | D01 | **Self-restart / supervision:** how KiwiBot restarts and rolls back its own parts | 0004, 0027 | Something must supervise the other parts and be able to roll back a bad change. | During the initial self-improvement work |
 | D02 | **Sandbox** for testing agent-based features | 0012, 0027 | What it contains (real data or fixtures, real devices or mocks) and how it stays in sync. | After D01; needed before approval can be relaxed much |
-| D03 | **Decision intake details** | 0026 | Any input method; early on, an agent pointed at the repo root. | Once the self-improvement loop is finished |
+| D03 | **Decision intake details** | 0026 | Any input method; early on, an agent pointed at the repo root. **Partly decided → [0034](0034-inbox.md)–[0036](0036-inbox-triage.md)** (the inbox). Still open: other input methods as they're built. | Once the self-improvement loop is finished |
 | D04 | **Working schedule** around the build model's usage window | 0022 | Overnight runs, scheduled bursts, etc. | TBD |
 | D05 | **Initial approval rules** (the "early decision" in 0025) | 0025 | What needs approval at the start and what form approval takes. | **Decided → [0028](0028-initial-approval-rules.md)** |
 | D06 | **Bootstrap workflow:** where tasks and reviews live before KiwiBot's own systems exist | 0016, 0021, 0022 | Markdown task list in the repo (in use now: [tasks/task-list.md](../tasks/task-list.md)); reviews as GitHub pull requests and/or markdown review notes. | **Decided → [0029](0029-bootstrap-workflow.md)** (D07 split off, deferred to end of M1) |
@@ -40,6 +40,7 @@ This is the live register of decisions that have been **consciously put off**. E
 | D18 | **Configuration format and location**, including how models are connected (0020) | 0020 | Earlier draft: `config/*.yaml` for settings and `.env` for secrets, with example files committed and real ones git-ignored. | Before the first configurable component |
 | D37 | **Visual style** (the visual half of 0011) | 0011, 0032 | Colours, type and layout across interfaces. The mirror needs a black background with bright elements (0009). | When the first UI is built |
 | D38 | **Priority review:** some features or changes reviewed ahead of others (0025) | 0025, 0029 | The review queue is oldest task first for now. Raised by the round 3 summary (4.7). | When the review queue regularly holds more than a few items, or at task system design (T14, D13) |
+| D39 | **Agent inbox:** a landing place for ideas raised by agents, kept apart from the human-written inbox (0034) | 0034 | Agent ideas are more polished, so they don't belong in the inbox. For now they use tier 1 routes: Proposed decisions, `☐ Todo` tasks, deferred rows (0028 rule 4). | When agents raise ideas outside a chat with the user, e.g. scheduled runs (D04) or the task system (T14) |
 
 ## Runtime assistant
 
