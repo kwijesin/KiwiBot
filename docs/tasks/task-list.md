@@ -75,11 +75,11 @@ The working rules (how to pick, plan, test, review and approve tasks) live in [A
 ## M1: Self-improvement loop v0
 
 ### T06: Define the review format and write the first review
-- **Status:** ☐ Todo · **Size:** S · **Depends on:** T03, T04
+- **Status:** ⏸ Awaiting review · **Size:** S · **Depends on:** T03, T04
 - **Decisions:** 0021, 0022, 0025 → resolves **D14**
 - **Done when:**
-  - [ ] A review template exists where T04 decided reviews live. It covers: what changed, why, consequences, test results, approval needed (per 0028), and questions for me.
-  - [ ] A review of the M0 work is written using it.
+  - [x] A review template exists where T04 decided reviews live. It covers: what changed, why, consequences, test results, approval needed (per 0028), and questions for me.
+  - [x] A review of the M0 work is written using it.
 
 ### T07: Style framework v0
 - **Status:** ☐ Todo · **Size:** M · **Depends on:** T05
