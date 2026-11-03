@@ -176,13 +176,13 @@ The working rules (how to pick, plan, test, review and approve tasks) live in [A
 - **Notes:** Added by task-planner from 0034–0035 (T13, inbox decision loop).
 
 ### T20: inbox-capture feature
-- **Status:** ☐ Todo · **Size:** S · **Depends on:** T19
+- **Status:** ⏸ Awaiting review · **Size:** S · **Depends on:** T19
 - **Decisions:** 0034, 0035
 - **Goal:** A prompt feature that writes the user's words verbatim to a new inbox file, then commits and pushes only that file.
 - **Done when:**
-  - [ ] `features/inbox-capture/SKILL.md` exists in the style guide format. It writes `inbox/YYYY-MM-DD-HHMM-<slug>.md` with front matter (date, source) and the user's words as the body, unchanged. It commits only that file as `inbox: <slug>` and pushes.
-  - [ ] Its review states the declared `approval_tier` and the reason for it (0033).
-  - [ ] At least one prompt test case passes per the testing guide, checking the body is verbatim and no other file changes.
+  - [x] `features/inbox-capture/SKILL.md` exists in the style guide format. It writes `inbox/YYYY-MM-DD-HHMM-<slug>.md` with front matter (date, source) and the user's words as the body, unchanged. It commits only that file as `inbox: <slug>` and pushes.
+  - [x] Its review states the declared `approval_tier` and the reason for it (0033).
+  - [x] At least one prompt test case passes per the testing guide, checking the body is verbatim and no other file changes.
 - **Notes:** Added by task-planner from 0034–0035 (T13, inbox decision loop).
 
 ### T21: inbox-triage feature
