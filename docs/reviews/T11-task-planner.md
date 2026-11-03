@@ -1,7 +1,7 @@
 # Review: T11, plan → task feature
 
-- **Task:** T11 · **Status:** ⏸ Awaiting review · **Date:** 2026-11-03
-- **Commits:** see the T11 commit on `main`
+- **Task:** T11 · **Status:** ☑ Done · **Date:** 2026-11-03
+- **Commits:** `12aa4b3`, plus the closing commit
 - **Tier:** 3 (plan + result)
 
 ## What changed
@@ -38,4 +38,4 @@ None. No demo, at the user's request: the first end-to-end runs of the loop (T13
 1. Should it be `active` on acceptance, like the others?
 
 ## Outcome
-*(Filled in when the task is closed.)*
+Approved by the user in the chat on 2026-11-03 ("task planner can go active, continue"). `task-planner` set to `active` (tier 1). The task template's Approval line was accepted with it.

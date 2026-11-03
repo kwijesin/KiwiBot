@@ -7,7 +7,7 @@ description: >-
   a synthesis round, or when the user asks for work to be broken into tasks.
 metadata:
   type: prompt
-  status: draft
+  status: active
   approval_tier: "1"
   model_class: frontier
   model_needs: file_read,file_write
