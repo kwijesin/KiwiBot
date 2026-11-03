@@ -1,7 +1,7 @@
 # Review: T09, decision-loop feature
 
-- **Task:** T09 · **Status:** ⏸ Awaiting review · **Date:** 2026-11-03
-- **Commits:** see the T09 commit on `main`
+- **Task:** T09 · **Status:** ☑ Done · **Date:** 2026-11-03
+- **Commits:** `feabe9b`, plus the closing commit
 - **Tier:** 3 (plan + result)
 
 ## What changed
@@ -44,4 +44,6 @@ None. The replay test moved to T08.
 2. Should closed loop records stay in `docs/decisions/planning/`, or move to `docs/history/planning/` like the round summaries? I'd move them on close, so `planning/` only holds open loops.
 
 ## Outcome
-*(Filled in when the task is closed.)*
+Approved by the user in the chat on 2026-11-03, including the `Rejected` status. Rule 6 in `AGENTS.md` now runs `decision-loop`.
+1. `decision-loop` set to `active` now.
+2. Closed loops move to a separate place: `docs/history/decision-loops/`. This is in the feature's step 8, the planning README and the history README.

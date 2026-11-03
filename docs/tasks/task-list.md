@@ -94,7 +94,7 @@ The working rules (how to pick, plan, test, review and approve tasks) live in [A
 - **Notes:** Visual style (0011) can wait until there's a UI. Add it to `deferred.md` if needed.
 
 ### T09: Decision-loop feature (intake → decisions → consequences → questions)
-- **Status:** ⏸ Awaiting review · **Size:** M · **Depends on:** T07
+- **Status:** ☑ Done · **Size:** M · **Depends on:** T07
 - **Decisions:** 0019 (steps 1–2 and the loop), 0026, 0001
 - **Goal:** Turn the manual planning process into a reusable feature. It takes raw input (a paragraph from me), checks it against the existing decisions and the deferred register, drafts or revises decisions, lists consequences and asks me questions, and repeats until the set is satisfactory.
 - **Done when:**

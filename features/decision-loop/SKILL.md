@@ -9,7 +9,7 @@ description: >-
   work needs a decision that doesn't exist yet.
 metadata:
   type: prompt
-  status: draft
+  status: active
   approval_tier: "1"
   model_class: frontier
   model_needs: file_read,file_write
@@ -64,14 +64,14 @@ Steps 1–2 of the self-improvement pipeline (0019): a decision comes in, it's c
 8. **Close.** Only on the user's **explicit acceptance** (0028):
    - set the accepted decisions to **Accepted**, in each file and in the index;
    - mark each resolved deferred item **Decided → NNNN**;
-   - write the outcome in the loop record;
+   - write the outcome in the loop record, set its status to Closed, and **move it to `docs/history/decision-loops/`**;
    - mark any rejected drafts `Rejected` in their file and the index, rather than deleting them;
    - suggest the next step: a synthesis summary (T10) if several decisions changed, or plan → task (T11) to turn them into work.
 
 ## Output
 - Proposed (later Accepted) decision files and index rows.
 - `deferred.md` rows.
-- A loop record in `docs/decisions/planning/` with the input, candidates, consequences, questions, answers and outcome.
+- A loop record with the input, candidates, consequences, questions, answers and outcome. It's kept in `docs/decisions/planning/` while open, and in `docs/history/decision-loops/` once closed.
 - A chat message per round with the summary, knock-on effects and numbered questions.
 
 ## Rules

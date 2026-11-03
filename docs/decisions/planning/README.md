@@ -18,4 +18,4 @@ This is the same shape as the self-improvement pipeline's decision loop (0019). 
 
 Future rounds write their working summaries here, and the summaries are archived to `docs/history/planning/` once the round is applied.
 
-The [decision-loop](../../../features/decision-loop/SKILL.md) feature automates steps 1 and 3 for one input at a time. Each run keeps a **loop record** here, `loop-YYYY-MM-DD-<slug>.md`.
+The [decision-loop](../../../features/decision-loop/SKILL.md) feature automates steps 1 and 3 for one input at a time. Each run keeps a **loop record** here, `loop-YYYY-MM-DD-<slug>.md`, while it's open. Closed loops move to [docs/history/decision-loops/](../../history/decision-loops/).
