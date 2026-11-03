@@ -62,13 +62,13 @@ The working rules (how to pick, plan, test, review and approve tasks) live in [A
 - **Notes:** Git conventions (**D07**: branching, versioning, tags, change size) are deferred to the end of M1 (T13). Until then: everything is committed straight to `main`, **one commit per task**.
 
 ### T05: Decide the initial feature types and coding conventions
-- **Status:** ⏸ Awaiting review · **Size:** S · **Depends on:** T04
+- **Status:** ☑ Done · **Size:** S · **Depends on:** T04
 - **Decisions:** 0007, 0010, 0011, 0013, 0027 → resolves **D15, D16** (only as far as M1 needs)
 - **Goal:** Define just enough for M1. Early features are mostly prompt-based (0027), with some scripts.
 - **Done when:**
-  - [x] A decision is drafted (0030, Proposed) listing the **initial feature types**, e.g. prompt/agent-instruction feature, markdown data, script, and later service, app and hardware integration.
+  - [x] A decision is accepted (0030) listing the **initial feature types**, e.g. prompt/agent-instruction feature, markdown data, script, and later service, app and hardware integration.
   - [x] It picks a **scripting language/runtime** for M1 and a **casing convention** across levels (0010).
-  - [ ] D15 and D16 are updated (decided, or partially decided with the rest still deferred).
+  - [x] D15 and D16 are updated (decided, or partially decided with the rest still deferred).
 
 ---
 

@@ -34,8 +34,8 @@ This is the live register of decisions that have been **consciously put off**. E
 |---|---|---|---|---|
 | D13 | **Task system structure:** which lists, fields, format | 0016 | At least "my tasks" and "KiwiBot's tasks". Fully custom. | When designing the task system (T14) |
 | D14 | **What a review contains** | 0021 | What changed, why, consequences, test results, approvals needed, questions. | With D06 (T06) |
-| D15 | **Languages, runtimes and casing convention** | 0010 | | Before the first code-based feature (T05) |
-| D16 | **Feature types** for the style and testing frameworks | 0011, 0013 | E.g. prompt file, script, service, app, hardware integration. | Before the frameworks are designed (T05, T11, T12) |
+| D15 | **Languages, runtimes and casing convention** | 0010 | **Partly decided → [0030](0030-initial-feature-types-and-conventions.md):** Python 3.11+ for M1 scripts, casing convention. Still open: languages/runtimes for services and apps. | When the first service or app is built |
+| D16 | **Feature types** for the style and testing frameworks | 0011, 0013 | **Partly decided → [0030](0030-initial-feature-types-and-conventions.md):** prompt feature, markdown data, script. Still open: service, app, hardware integration, MagicMirror module. | When each later type is first needed |
 | D17 | **Skill / tool format** | 0011, 0025 | Earlier draft: a decorator declaring name, description, input schema, `confirm` and `cloud_ok`. Skills should be idempotent and return a short, speakable result. Approval flags overlap with 0025. | When the first runtime skill is built |
 | D18 | **Configuration format and location**, including how models are connected (0020) | 0020 | Earlier draft: `config/*.yaml` for settings and `.env` for secrets, with example files committed and real ones git-ignored. | Before the first configurable component |
 

@@ -17,6 +17,7 @@ KiwiBot is the user's personal assistant, efficiency accelerator and extra inter
 | **Task list** (what to work on) | [docs/tasks/task-list.md](docs/tasks/task-list.md) |
 | Reviews | [docs/reviews/](docs/reviews/), one `Txx-short-name.md` per task ([0029](docs/decisions/0029-bootstrap-workflow.md)); format in T06 |
 | History (archived planning rounds) | [docs/history/](docs/history/) |
+| External dependencies (runtimes, tools, services, accounts) | [docs/dependencies.md](docs/dependencies.md) |
 | Other docs (architecture, models, hardware, etc.) | [docs/README.md](docs/README.md) |
 
 ## How to work
@@ -30,6 +31,14 @@ KiwiBot is the user's personal assistant, efficiency accelerator and extra inter
 7. **Test what you build** ([0012](docs/decisions/0012-test-everything.md)), including prompt-based work where you can. There's no sandbox yet ([0027](docs/decisions/0027-early-features-agent-driven.md)). **Until the testing framework exists (T08), tests are only done where a task's done-when list asks for one.**
 8. **Finish with a review note** in `docs/reviews/Txx-short-name.md`, committed with the task, and give the same text in the chat. Use these headings: what changed, why, consequences, test results, approval needed, done without approval (tier 1), open questions, outcome. T06 will define the proper format. When the task is closed, fill in the outcome.
 9. **Update the task list:** the task's status, ticked done-when boxes, and any new tasks discovered along the way. New tasks go in as `☐ Todo` with all the usual fields, the next free ID and an "Added during Txx" note. Never renumber or delete tasks. Mark unneeded ones `✕ Dropped` with a reason.
+
+## Conventions
+
+From [0030](docs/decisions/0030-initial-feature-types-and-conventions.md):
+- **Feature types:** prompt feature, markdown data, script. Other types need a new decision.
+- **Scripts:** Python 3.11+, standard library first, run from a standalone Python install in a per-project virtual environment.
+- **Casing:** `kebab-case` for folders, files and feature names; `snake_case` for data keys; `UPPER_SNAKE_CASE` for environment variables; each language's own style inside code (Python module files are `snake_case`).
+- **External dependencies:** any change that adds, removes or changes one updates [docs/dependencies.md](docs/dependencies.md) in the same commit.
 
 ## Git (interim)
 

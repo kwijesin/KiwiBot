@@ -1,6 +1,6 @@
 # Review: T05, initial feature types and conventions
 
-- **Task:** T05 · **Status:** ⏸ Awaiting review · **Date:** 2026-11-03
+- **Task:** T05 · **Status:** ☑ Done · **Date:** 2026-11-03
 
 ## What changed
 - New decision [0030](../decisions/0030-initial-feature-types-and-conventions.md), status **Proposed**, added to the decisions index. It sets out:
@@ -35,4 +35,4 @@ Tier 3 (0028): accepting 0030.
 1. The `python` on your PATH is the one bundled with Espressif's tools (`C:\Espressif\tools\python`, 3.11.15). It works, but installing packages into it could interfere with ESP-IDF. Should KiwiBot scripts use a separate Python, e.g. a project virtual environment or a standard Python install, once the first dependency is needed? This doesn't block 0030.
 
 ## Outcome
-*(Filled in when the task is closed.)*
+Approved by the user in the chat on 2026-11-03. 0030 accepted, D15 and D16 marked partly decided, and `AGENTS.md` updated. Open question 1 answered: use a separate Python install with a per-project virtual environment. This was added to 0030 and `dependencies.md`.

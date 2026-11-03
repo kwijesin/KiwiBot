@@ -1,6 +1,6 @@
 # 0030. Initial feature types and conventions
 
-- **Status:** Proposed
+- **Status:** Accepted
 - **Date:** 2026-11-03
 - **Tags:** standards, architecture
 
@@ -19,6 +19,7 @@ Expected later types are **service**, **app**, **hardware integration** and **Ma
 ### Scripting language
 - **Python 3.11+** for M1 scripts.
 - Scripts use the standard library unless a dependency is really needed. Dependency management is decided with the first script that needs a dependency.
+- Scripts run from a **separate, standalone Python install** in a **per-project virtual environment**, never from interpreters bundled with other tools (e.g. ESP-IDF's).
 - Languages and runtimes for services and apps (e.g. JavaScript for the MagicMirror module, 0009) are decided when they're first needed.
 
 ### Casing
