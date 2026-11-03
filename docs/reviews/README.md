@@ -15,5 +15,6 @@ One review note per task, kept in git so the review history isn't lost ([0029](.
 | [T06: review format](T06-review-format.md) | ☑ Done |
 | [T07: style framework v0](T07-style-framework.md) | ☑ Done |
 | [T09: decision-loop feature](T09-decision-loop.md) | ☑ Done |
+| [T10: synthesis feature](T10-synthesis.md) | ⏸ Awaiting review |
 
 T01–T03 were reviewed in the chat only, before review files existed. [M0-bootstrap.md](M0-bootstrap.md) covers them.
