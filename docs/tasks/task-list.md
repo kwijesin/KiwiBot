@@ -115,11 +115,11 @@ The working rules (how to pick, plan, test, review and approve tasks) live in [A
   - [x] The feature exists.
 
 ### T12: Task-execution workflow
-- **Status:** ☐ Todo · **Size:** S · **Depends on:** T06, T07
+- **Status:** ⏸ Awaiting review · **Size:** S · **Depends on:** T06, T07
 - **Decisions:** 0019 (step 5), 0021 (5-80-15), 0017, 0012
 - **Goal:** Formalize "How to work this list" as a feature or agent instruction set: pick a task, plan, get approval if required, execute in small increments, test, write the review note, and stop at about 80% for review.
 - **Done when:**
-  - [ ] The workflow exists and the agent entry point refers to it.
+  - [x] The workflow exists and the agent entry point refers to it.
   - [ ] The next task (T08) is carried out using it.
 
 ### T08: Testing framework v0

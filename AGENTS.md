@@ -15,22 +15,22 @@ KiwiBot is the user's personal assistant, efficiency accelerator and extra inter
 | Deferred decisions (consciously put off) | [docs/decisions/deferred.md](docs/decisions/deferred.md) |
 | Planning process (rounds, synthesis) | [docs/decisions/planning/](docs/decisions/planning/) |
 | **Task list** (what to work on) | [docs/tasks/task-list.md](docs/tasks/task-list.md) |
-| Reviews | [docs/reviews/](docs/reviews/), one `Txx-short-name.md` per task ([0029](docs/decisions/0029-bootstrap-workflow.md)); format in T06 |
+| Reviews | [docs/reviews/](docs/reviews/), one `Txx-short-name.md` per task ([0029](docs/decisions/0029-bootstrap-workflow.md)), from [the template](docs/reviews/template.md) ([0031](docs/decisions/0031-review-format.md)) |
 | History (archived planning rounds) | [docs/history/](docs/history/) |
 | External dependencies (runtimes, tools, services, accounts) | [docs/dependencies.md](docs/dependencies.md) |
+| Features (Agent Skills folders) | [features/](features/), see the [style guide](docs/standards/style-guide.md) |
 | Other docs (architecture, models, hardware, etc.) | [docs/README.md](docs/README.md) |
 
 ## How to work
 
 1. **Read first:** [README.md](README.md), every decision in [docs/decisions/](docs/decisions/), [deferred.md](docs/decisions/deferred.md) and the [task list](docs/tasks/task-list.md).
-2. **Check the review queue first** (follow [features/review-queue/SKILL.md](features/review-queue/SKILL.md)): every `⏸ Awaiting review` task. If there are any, present them for review and only start new work if the user says to ([0029](docs/decisions/0029-bootstrap-workflow.md)).
-3. **Pick** the first task marked `☐ Todo` whose dependencies are all `☑ Done`. Tasks marked `⏸ Awaiting review` count as not done.
-4. **Plan, then execute.** Present the plan for the task and wait for the user's go-ahead before executing. This is the 5-80-15 split ([0021](docs/decisions/0021-human-in-the-loop.md)): the task list is the user's 5%, you do the 80%, then stop for review before the last 15%.
-5. **Keep it small** ([0017](docs/decisions/0017-small-increments.md)). One task means one well-bounded change and one review. If a task grows, split it and add the new tasks to the task list.
-6. **Don't decide silently.** If the work needs a decision that isn't in `docs/decisions/`, run the [decision-loop](features/decision-loop/SKILL.md) feature: it drafts **Proposed** decisions and asks the user (0019). If something can wait, add it to `deferred.md`.
-7. **Test what you build** ([0012](docs/decisions/0012-test-everything.md)), including prompt-based work where you can. There's no sandbox yet ([0027](docs/decisions/0027-early-features-agent-driven.md)). **Until the testing framework exists (T08), tests are only done where a task's done-when list asks for one.**
-8. **Finish with a review note** in `docs/reviews/Txx-short-name.md`, committed with the task, and give the same text in the chat. Copy [docs/reviews/template.md](docs/reviews/template.md) ([0031](docs/decisions/0031-review-format.md)). When the task is closed, fill in the outcome.
-9. **Update the task list:** the task's status, ticked done-when boxes, and any new tasks discovered along the way. New tasks go in as `☐ Todo` with all the usual fields, the next free ID and an "Added during Txx" note. Never renumber or delete tasks. Mark unneeded ones `✕ Dropped` with a reason.
+2. **Work on tasks with [task-runner](features/task-runner/SKILL.md).** It checks the review queue, picks the next task, presents the plan and waits for approval, executes, tests, writes the review note, commits, pushes and stops. On approval, it closes the task.
+3. **Other features** it uses, which you can also run directly:
+   - [review-queue](features/review-queue/SKILL.md): what's waiting for the user's review.
+   - [decision-loop](features/decision-loop/SKILL.md): new intent or a missing decision goes here. **Don't decide silently.**
+   - [task-planner](features/task-planner/SKILL.md): turn accepted decisions or new work into `☐ Todo` tasks.
+   - [synthesis](features/synthesis/SKILL.md): a round summary after decision loops close.
+4. **Testing:** until the testing framework exists (T08), tests are only done where a task's done-when list asks for one ([0012](docs/decisions/0012-test-everything.md)).
 
 ## Conventions
 
