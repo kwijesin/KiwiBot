@@ -143,6 +143,11 @@ The working rules (how to pick, plan, test, review and approve tasks) live in [A
 - **Decisions:** 0022, 0018
 - **Goal:** Push one real item through the whole loop: intake → decision loop → plan → tasks → execution → review.
 - **Suggested item:** **D21, the speech-to-text engine for voice-to-text input** (0018, an early core feature). It's small, real, and leads straight into M2. **The user will choose the item, and the run happens in a new session.**
+- **Item chosen (2026-11-03):** a quick-capture inbox (0034–0036). Its tasks are T19–T22. Checkpoint commits (`T13: checkpoint – <stage>`) are allowed while T13 is open (user, T13 plan).
+- **Retrospective inputs** (collected during the run, revisited at the retrospective):
+  1. **Commit leeway.** The user: "The one commit per task rule may require some leeway as I'm sure we'll make other tasks that require it - tasks that examine other tasks, tasks that get started and then find that it depends on a different task finishing first, etc." Also: capture commits (`inbox: <slug>`, 0035) are a commit kind outside tasks. Feeds D07.
+  2. **decision-loop drafts settle what the input didn't say.** Its replay test failed 6/7 (item 6). Suggested fix in the test's Last run.
+  3. **Approval at the feature level.** The user, approving T19–T22 as a set: "because the system works together as a whole, and you even prompt approval as a group, that the intermediate steps between t19 and t22 dont themselves need approval, only as a system. I'm anticipating that single decisions that add a feature via multiple tasks need approval at the overall feature level, not between tasks."
 - **Also pending for these runs:** the round 3 decision loops (items 4.2, 4.3, 4.4, 4.6, and 4.5 on its own), doc sync (4.9), and the three unrun test cases (decision-loop, synthesis, task-planner). See [round-03-summary.md](../decisions/planning/round-03-summary.md).
 - **Done when:**
   - [ ] The item has been through every stage, with reviews. This is the **first task to use the testing framework** (T08): every stage's output is tested.
@@ -158,6 +163,46 @@ The working rules (how to pick, plan, test, review and approve tasks) live in [A
   - [ ] A script feature (e.g. `features/skill-sync/`) links or syncs `features/*` into `.claude/skills/`, and works on Windows.
   - [ ] It's tested per T08, and `AGENTS.md` says when to run it.
 - **Notes:** Added during T07. Likely the first script feature (0007). Other agents' skill locations can be added when they're used (0020).
+
+### T19: Inbox folder v0
+- **Status:** ☐ Todo · **Size:** S · **Depends on:** none
+- **Decisions:** 0034, 0035 → partly resolves **D03**
+- **Goal:** Create the inbox as markdown data, so the user can start dropping files in.
+- **Done when:**
+  - [ ] `inbox/README.md` exists. It says what belongs in the inbox (human-written only, verbatim; 0034), how to add an item (drop any `.txt` or `.md` file, or use the capture skill), the capture skill's file name and front matter format, and that parked items stay here (0036).
+  - [ ] `docs/history/inbox/README.md` exists, saying triaged items land there with front matter recording the triage date and route (0036).
+  - [ ] The style guide's markdown data section notes the inbox exception: it lives at the root, not in `docs/` (0035).
+  - [ ] `AGENTS.md` (map), `README.md` (layout) and `docs/README.md` list the inbox.
+- **Notes:** Added by task-planner from 0034–0035 (T13, inbox decision loop).
+
+### T20: inbox-capture feature
+- **Status:** ☐ Todo · **Size:** S · **Depends on:** T19
+- **Decisions:** 0034, 0035
+- **Goal:** A prompt feature that writes the user's words verbatim to a new inbox file, then commits and pushes only that file.
+- **Done when:**
+  - [ ] `features/inbox-capture/SKILL.md` exists in the style guide format. It writes `inbox/YYYY-MM-DD-HHMM-<slug>.md` with front matter (date, source) and the user's words as the body, unchanged. It commits only that file as `inbox: <slug>` and pushes.
+  - [ ] Its review states the declared `approval_tier` and the reason for it (0033).
+  - [ ] At least one prompt test case passes per the testing guide, checking the body is verbatim and no other file changes.
+- **Notes:** Added by task-planner from 0034–0035 (T13, inbox decision loop).
+
+### T21: inbox-triage feature
+- **Status:** ☐ Todo · **Size:** M · **Depends on:** T19
+- **Decisions:** 0036, 0034
+- **Goal:** A prompt feature that proposes one route per inbox item, waits for the user's confirmation, runs the routes and archives the items.
+- **Done when:**
+  - [ ] `features/inbox-triage/SKILL.md` exists in the style guide format. It pulls first (0035), proposes one route per item (decision-loop, task-planner, existing task, park, drop), runs nothing before the user confirms (0036), passes each item's text word for word to decision-loop, and moves routed and dropped items to `docs/history/inbox/` with the triage front matter.
+  - [ ] Its review states the declared `approval_tier` (0033).
+  - [ ] At least one prompt test case passes, with fixture items of several kinds, checking the proposed routes and that nothing changes before confirmation.
+- **Notes:** Added by task-planner from 0036 (T13, inbox decision loop).
+
+### T22: Inbox count at session start
+- **Status:** ☐ Todo · **Size:** S · **Depends on:** T19
+- **Decisions:** 0036, 0029
+- **Goal:** A session start reports how many items are waiting in the inbox, right after the review queue.
+- **Done when:**
+  - [ ] `review-queue` ends its output with one line: the number of items in `inbox/` (excluding `README.md`), or "The inbox is empty."
+  - [ ] Its `mixed-queue` test case (or a new case) covers the line, and passes.
+- **Notes:** Added by task-planner from 0036 (T13, inbox decision loop).
 
 ---
 

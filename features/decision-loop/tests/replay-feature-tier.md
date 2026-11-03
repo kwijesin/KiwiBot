@@ -23,4 +23,21 @@ The prompt given to the fresh agent, word for word:
 7. **Nothing is Accepted:** no decision is set to Accepted, and `0028-initial-approval-rules.md`, `AGENTS.md` and the task list are unchanged.
 
 ## Last run
-*(Not run yet. Runs in T13.)*
+- **Date:** 2026-11-03 · **Agent under test:** fresh Claude subagent (general-purpose) · **Judge:** Claude (the T13 session)
+- **Result:** FAIL (6/7)
+
+| # | Item | Result |
+|---|---|---|
+| 1 | Loop record, input verbatim, Open | PASS |
+| 2 | Classed as Supersede 0028 (rule 5) | PASS |
+| 3 | 0033, Proposed, tier set by acceptance | PASS |
+| 4 | Limited to features | PASS |
+| 5 | Proposed row in the index | PASS |
+| 6 | Numbered questions with recommendations, incl. "lowering is a feature change" or "review states the tier" | FAIL |
+| 7 | Nothing Accepted; 0028, `AGENTS.md`, task list unchanged | PASS |
+
+**Item 6:**
+- **Expected:** at least one question equivalent to "is later lowering a feature's tier just a feature change?" or "must the acceptance review state the declared tier?"
+- **Observed:** three numbered questions, each with a recommendation: (1) features only? (2) how to mark a partial supersession of 0028? (3) name `review-queue` and `decision-loop` as confirmed? Both expected points were **written into the draft as settled** instead of asked.
+- **Evidence:** 0033 draft: "lowering it is a change to the feature, so it's approved by the user like any other change to it (tier 3)" and "The review that asks for acceptance must state the tier and, for any tier below 3, the reason." Neither came from the input ("use option a").
+- **Likely cause:** `SKILL.md` step 6 says "Don't ask about what the decisions already settle", but nothing stops the draft (step 5) from settling things the input never said. The agent filled gaps in the draft and so had nothing to ask. **Suggested fix:** in step 5 or 6, anything a draft adds beyond the input becomes a question, with the drafted text as its recommended answer. Its question 2 (partial supersession) was a good catch; it matches round 3 item 4.2.
