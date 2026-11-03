@@ -1,6 +1,6 @@
 # 0029. Bootstrap workflow: tasks and reviews
 
-- **Status:** Proposed
+- **Status:** Accepted
 - **Date:** 2026-11-02
 - **Tags:** process
 

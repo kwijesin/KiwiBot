@@ -51,14 +51,14 @@ The working rules (how to pick, plan, test, review and approve tasks) live in [A
   - [x] I accept it. D05 is marked **Decided → 0028**, and the agent entry point is updated.
 
 ### T04: Decide the bootstrap workflow
-- **Status:** ⏸ Awaiting review · **Size:** M · **Depends on:** T03
+- **Status:** ☑ Done · **Size:** M · **Depends on:** T03
 - **Decisions:** 0006, 0016, 0017, 0021, 0022 → resolves **D06**
 - **Goal:** Settle how work flows before KiwiBot's own systems exist.
 - **Done when:**
-  - [x] A decision is drafted (0029, Proposed) and awaiting acceptance, covering:
+  - [x] A decision is drafted and accepted (0029), covering:
     - **Tasks:** confirm this markdown file as the interim task list, and how tasks are added and updated.
     - **Reviews:** where they happen and how the morning and later-day reviews work in practice (0022). (No PRs while everything goes straight to `main`; see the note below.)
-  - [ ] D06 is marked decided, and the agent entry point is updated.
+  - [x] D06 is marked decided, and the agent entry point is updated.
 - **Notes:** Git conventions (**D07**: branching, versioning, tags, change size) are deferred to the end of M1 (T13). Until then: everything is committed straight to `main`, **one commit per task**.
 
 ### T05: Decide the initial feature types and coding conventions

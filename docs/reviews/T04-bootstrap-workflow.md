@@ -1,6 +1,6 @@
 # Review: T04, bootstrap workflow
 
-- **Task:** T04 · **Status:** ⏸ Awaiting review · **Date:** 2026-11-02
+- **Task:** T04 · **Status:** ☑ Done · **Date:** 2026-11-02
 
 ## What changed
 - New decision [0029](../decisions/0029-bootstrap-workflow.md), "Bootstrap workflow: tasks and reviews", status **Proposed**, added to the decisions index.
@@ -30,4 +30,4 @@ Tier 3 (0028): accepting 0029.
 None.
 
 ## Outcome
-*(Filled in when the task is closed.)*
+Approved by the user in the chat on 2026-11-03 ("looks good, next"). 0029 accepted, D06 marked decided and `AGENTS.md` updated.

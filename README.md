@@ -25,6 +25,7 @@ KiwiBot/
     ├── README.md           ← documentation index
     ├── decisions/          ← decisions (NNNN-*.md), deferred register, planning process
     ├── tasks/              ← task list (bootstrap until the custom task system exists)
+    ├── reviews/            ← one review note per task (0029)
     ├── history/            ← archived intermediate files (planning rounds)
     ├── architecture.md     ← decided shape; mostly placeholder
     ├── models.md
