@@ -108,11 +108,11 @@ The working rules (how to pick, plan, test, review and approve tasks) live in [A
   - [x] The feature exists.
 
 ### T11: Plan → task feature
-- **Status:** ☐ Todo · **Size:** S · **Depends on:** T07
+- **Status:** ⏸ Awaiting review · **Size:** S · **Depends on:** T07
 - **Decisions:** 0019 (steps 3–4), 0016, 0017, 0025
 - **Goal:** Turn accepted decisions into a plan and tasks in this file's format: goal, decisions, approval, size, dependencies and done-when.
 - **Done when:**
-  - [ ] The feature exists.
+  - [x] The feature exists.
 
 ### T12: Task-execution workflow
 - **Status:** ☐ Todo · **Size:** S · **Depends on:** T06, T07

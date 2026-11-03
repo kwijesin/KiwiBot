@@ -1,6 +1,7 @@
 ### Txx: Title
 - **Status:** ☐ Todo · **Size:** S · **Depends on:** Txx
 - **Decisions:** NNNN → resolves **Dxx** (if any)
+- **Approval:** tier 3 (0028). Optional; tasks without this line are tier 3.
 - **Goal:** One sentence on what this achieves.
 - **Done when:**
   - [ ] A checkable outcome.
