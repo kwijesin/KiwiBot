@@ -23,7 +23,7 @@ KiwiBot is the user's personal assistant, efficiency accelerator and extra inter
 ## How to work
 
 1. **Read first:** [README.md](README.md), every decision in [docs/decisions/](docs/decisions/), [deferred.md](docs/decisions/deferred.md) and the [task list](docs/tasks/task-list.md).
-2. **Check the review queue first:** every `⏸ Awaiting review` task. If there are any, present them for review and only start new work if the user says to ([0029](docs/decisions/0029-bootstrap-workflow.md)).
+2. **Check the review queue first** (follow [features/review-queue/SKILL.md](features/review-queue/SKILL.md)): every `⏸ Awaiting review` task. If there are any, present them for review and only start new work if the user says to ([0029](docs/decisions/0029-bootstrap-workflow.md)).
 3. **Pick** the first task marked `☐ Todo` whose dependencies are all `☑ Done`. Tasks marked `⏸ Awaiting review` count as not done.
 4. **Plan, then execute.** Present the plan for the task and wait for the user's go-ahead before executing. This is the 5-80-15 split ([0021](docs/decisions/0021-human-in-the-loop.md)): the task list is the user's 5%, you do the 80%, then stop for review before the last 15%.
 5. **Keep it small** ([0017](docs/decisions/0017-small-increments.md)). One task means one well-bounded change and one review. If a task grows, split it and add the new tasks to the task list.
@@ -37,6 +37,7 @@ KiwiBot is the user's personal assistant, efficiency accelerator and extra inter
 From [0030](docs/decisions/0030-initial-feature-types-and-conventions.md):
 - **Feature types:** prompt feature, markdown data, script. Other types need a new decision.
 - **Scripts:** Python 3.11+, standard library first, run from a standalone Python install in a per-project virtual environment.
+- **Feature structure:** every feature is an Agent Skills folder, `features/<name>/SKILL.md`. See the [style guide](docs/standards/style-guide.md) ([0032](docs/decisions/0032-style-framework-v0.md)).
 - **Casing:** `kebab-case` for folders, files and feature names; `snake_case` for data keys; `UPPER_SNAKE_CASE` for environment variables; each language's own style inside code (Python module files are `snake_case`).
 - **External dependencies:** any change that adds, removes or changes one updates [docs/dependencies.md](docs/dependencies.md) in the same commit.
 

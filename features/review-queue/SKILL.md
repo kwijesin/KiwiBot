@@ -6,7 +6,7 @@ description: >-
   the start of a session, or when the user asks what's waiting for review.
 metadata:
   type: prompt
-  status: draft
+  status: active
   approval_tier: "1"
   model_class: any
   model_needs: file_read

@@ -1,7 +1,7 @@
 # Review: T07, style framework v0
 
-- **Task:** T07 · **Status:** ⏸ Awaiting review · **Date:** 2026-11-03
-- **Commits:** see the T07 commit on `main`
+- **Task:** T07 · **Status:** ☑ Done · **Date:** 2026-11-03
+- **Commits:** `6e67943`, plus the closing commit
 - **Tier:** 3 (plan + result)
 
 ## What changed
@@ -57,4 +57,8 @@ It found the one `⏸` task, matched its review note, quoted the note exactly, a
 2. When 0032 is accepted, should `review-queue` go from `draft` to `active`, or stay `draft` until T08 tests it?
 
 ## Outcome
-*(Filled in when the task is closed.)*
+Approved by the user in the chat on 2026-11-03. 0032 accepted, `review-queue` set to `active`, and `AGENTS.md` updated: rule 2 uses `review-queue`, and the conventions point to the style guide.
+1. Script features as skills: agreed. A script can still run another script directly, and a skill can also be run by an LLM with context.
+2. `review-queue` activated.
+
+**Follow-up (user's call):** T08 (testing) moves to after T12, just before T13, so T09–T12 aren't held up by test runs. T13 becomes the first task to use testing, and the T09–T11 test items move into T08. Task IDs are unchanged (0029).

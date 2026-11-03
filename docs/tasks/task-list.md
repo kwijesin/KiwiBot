@@ -82,7 +82,7 @@ The working rules (how to pick, plan, test, review and approve tasks) live in [A
   - [x] A review of the M0 work is written using it.
 
 ### T07: Style framework v0
-- **Status:** ⏸ Awaiting review · **Size:** M · **Depends on:** T05
+- **Status:** ☑ Done · **Size:** M · **Depends on:** T05
 - **Decisions:** 0010, 0011, 0020, 0025
 - **Goal:** Consistent structure for the M1 feature types, mainly prompt-based features.
 - **Done when:**
@@ -93,23 +93,12 @@ The working rules (how to pick, plan, test, review and approve tasks) live in [A
   - [x] The guide is shown applied to a small example feature.
 - **Notes:** Visual style (0011) can wait until there's a UI. Add it to `deferred.md` if needed.
 
-### T08: Testing framework v0
-- **Status:** ☐ Todo · **Size:** M · **Depends on:** T05, T07
-- **Decisions:** 0012, 0013, 0027 (no sandbox yet)
-- **Done when:**
-  - [ ] A testing guide exists:
-    - **Prompt-based features:** fixture inputs, an expected-outcome checklist, an agent run, and a pass/fail result recorded. Human-judged pass/fail is allowed for now.
-    - **Scripts:** standard unit tests in the language chosen in T05.
-  - [ ] There's a test template and one example test that passes.
-  - [ ] Test output is written to be useful feedback for an agent (0012).
-
 ### T09: Decision-loop feature (intake → decisions → consequences → questions)
-- **Status:** ☐ Todo · **Size:** M · **Depends on:** T07, T08
+- **Status:** ☐ Todo · **Size:** M · **Depends on:** T07
 - **Decisions:** 0019 (steps 1–2 and the loop), 0026, 0001
 - **Goal:** Turn the manual planning process into a reusable feature. It takes raw input (a paragraph from me), checks it against the existing decisions and the deferred register, drafts or revises decisions, lists consequences and asks me questions, and repeats until the set is satisfactory.
 - **Done when:**
   - [ ] The feature exists in the style framework format.
-  - [ ] **Test:** replaying one of my original planning paragraphs from `docs/history/planning/` (e.g. the testing paragraph behind 0012) gives a decision equivalent to the recorded one, with sensible related decisions and questions.
 
 ### T10: Synthesis/cascade feature (round summaries)
 - **Status:** ☐ Todo · **Size:** S · **Depends on:** T09
@@ -117,31 +106,45 @@ The working rules (how to pick, plan, test, review and approve tasks) live in [A
 - **Goal:** Produce a round summary: what changed, knock-on effects, new questions and deferred items.
 - **Done when:**
   - [ ] The feature exists.
-  - [ ] **Test:** run over decisions 0025–0027, it surfaces the main knock-on effects found in the archived round 2 summary (approval decision on the critical path, bootstrap, agent-readable root).
 
 ### T11: Plan → task feature
-- **Status:** ☐ Todo · **Size:** S · **Depends on:** T07, T08
+- **Status:** ☐ Todo · **Size:** S · **Depends on:** T07
 - **Decisions:** 0019 (steps 3–4), 0016, 0017, 0025
 - **Goal:** Turn accepted decisions into a plan and tasks in this file's format: goal, decisions, approval, size, dependencies and done-when.
 - **Done when:**
   - [ ] The feature exists.
-  - [ ] **Test:** it generates sensible, small tasks for one accepted decision, and I approve them.
 
 ### T12: Task-execution workflow
-- **Status:** ☐ Todo · **Size:** S · **Depends on:** T06, T07, T08
+- **Status:** ☐ Todo · **Size:** S · **Depends on:** T06, T07
 - **Decisions:** 0019 (step 5), 0021 (5-80-15), 0017, 0012
 - **Goal:** Formalize "How to work this list" as a feature or agent instruction set: pick a task, plan, get approval if required, execute in small increments, test, write the review note, and stop at about 80% for review.
 - **Done when:**
   - [ ] The workflow exists and the agent entry point refers to it.
-  - [ ] **Test:** the next task (T13) is carried out using it.
+  - [ ] The next task (T08) is carried out using it.
+
+### T08: Testing framework v0
+- **Status:** ☐ Todo · **Size:** M · **Depends on:** T05, T07, T09, T10, T11, T12
+- **Decisions:** 0012, 0013, 0027 (no sandbox yet)
+- **Done when:**
+  - [ ] A testing guide exists:
+    - **Prompt-based features:** fixture inputs, an expected-outcome checklist, an agent run, and a pass/fail result recorded. Human-judged pass/fail is allowed for now.
+    - **Scripts:** standard unit tests in the language chosen in T05.
+  - [ ] There's a test template and one example test that passes.
+  - [ ] Test output is written to be useful feedback for an agent (0012).
+  - [ ] Tests exist for the M1 features. These test items moved here from their tasks so T09–T12 aren't held up by test runs:
+    - **decision-loop (T09):** replaying one of my original planning paragraphs from `docs/history/planning/` (e.g. the testing paragraph behind 0012) gives a decision equivalent to the recorded one, with sensible related decisions and questions.
+    - **Synthesis (T10):** run over decisions 0025–0027, it surfaces the main knock-on effects found in the archived round 2 summary (approval decision on the critical path, bootstrap, agent-readable root).
+    - **Plan → task (T11):** it generates sensible, small tasks for one accepted decision, and I approve them.
+    - **review-queue (T07 example).**
+- **Notes:** Moved after T12 during T07 (user's call), so T09–T12 can go ahead without tests. The task ID is unchanged (0029: no renumbering).
 
 ### T13: First end-to-end run of the loop
-- **Status:** ☐ Todo · **Size:** M · **Depends on:** T09, T10, T11, T12
+- **Status:** ☐ Todo · **Size:** M · **Depends on:** T08, T09, T10, T11, T12
 - **Decisions:** 0022, 0018
 - **Goal:** Push one real item through the whole loop: intake → decision loop → plan → tasks → execution → review.
 - **Suggested item:** **D21, the speech-to-text engine for voice-to-text input** (0018, an early core feature). It's small, real, and leads straight into M2.
 - **Done when:**
-  - [ ] The item has been through every stage, with reviews.
+  - [ ] The item has been through every stage, with reviews. This is the **first task to use the testing framework** (T08): every stage's output is tested.
   - [ ] A short retrospective lists what to improve in the loop, and those improvements become new tasks (via T11).
   - [ ] **D07** (branching, commit style, versioning, milestone tags, change-size guideline) is decided, informed by how M1 went.
   - [ ] M1 is complete and tagged as a version (per D07).

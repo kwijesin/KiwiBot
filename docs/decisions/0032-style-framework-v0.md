@@ -1,6 +1,6 @@
 # 0032. Style framework v0: features as Agent Skills
 
-- **Status:** Proposed
+- **Status:** Accepted
 - **Date:** 2026-11-03
 - **Tags:** standards, architecture
 
