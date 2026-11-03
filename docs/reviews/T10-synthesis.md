@@ -1,7 +1,7 @@
 # Review: T10, synthesis/cascade feature
 
-- **Task:** T10 · **Status:** ⏸ Awaiting review · **Date:** 2026-11-03
-- **Commits:** see the T10 commit on `main`
+- **Task:** T10 · **Status:** ☑ Done · **Date:** 2026-11-03
+- **Commits:** `9179412`, plus the closing commit
 - **Tier:** 3 (plan + result)
 
 ## What changed
@@ -13,7 +13,7 @@
   It never edits decisions, tasks or docs itself.
 - [references/round-summary-template.md](../../features/synthesis/references/round-summary-template.md), modelled on the round 2 summary.
 - **First real run of `decision-loop`**, on your "option a" answer:
-  - [loop record](../decisions/planning/loop-2026-11-03-feature-tier-on-acceptance.md), still open with 2 questions;
+  - [loop record](../history/decision-loops/loop-2026-11-03-feature-tier-on-acceptance.md), still open with 2 questions;
   - draft [0033](../decisions/0033-feature-tier-set-on-acceptance.md): a feature's tier is set when the user accepts the feature (supersedes 0028 rule 5 for features only). **Proposed.**
 - **Demo:** a fresh agent following only `SKILL.md` wrote [round-03-summary.md](../decisions/planning/round-03-summary.md), covering 0028–0033.
 
@@ -52,4 +52,8 @@ None (T08). The demo above is a demonstration, not a test. It followed the templ
 2. For the round 3 knock-on effects, is the batching suggested above OK? If so, I'd run those loops before T11. Or should T11 come first, so 8 and 9 can become tasks straight away?
 
 ## Outcome
-*(Filled in when the task is closed.)*
+Approved by the user in the chat on 2026-11-03.
+- `synthesis` accepted and set to `active` (tier 1).
+- 0033: both loop questions answered "yes". 0033 accepted and the loop closed. `AGENTS.md`, the style guide and the review template updated.
+- Round 3 knock-on effects: go ahead with the suggestions. 7 deferred as D38. The decision loops for 2, 3, 4, 6 and for 5 are pending. 8 and 9 go through T11.
+- "go straight to 11": T11 comes before those loops.

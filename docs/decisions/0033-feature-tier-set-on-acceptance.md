@@ -1,6 +1,6 @@
 # 0033. A feature's approval tier is set when it's accepted
 
-- **Status:** Proposed
+- **Status:** Accepted
 - **Date:** 2026-11-03
 - **Tags:** process, features
 - **Supersedes:** 0028 rule 5, for features only

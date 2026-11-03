@@ -22,7 +22,7 @@ Effects on other tasks, decisions or docs, and any follow-up needed.
 What was run, pass/fail, and what was found. Or "None", with the reason.
 
 ## Approval needed
-The exact item(s) the user is asked to approve, each with its tier (0028).
+The exact item(s) the user is asked to approve, each with its tier (0028). For a feature, state its declared `approval_tier` (0033).
 
 ## Done without approval (tier 1)
 Everything done under tier 1 (0028), e.g. status changes, new ☐ Todo tasks, Proposed decisions, deferred items, typo fixes.

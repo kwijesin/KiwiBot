@@ -41,6 +41,6 @@ Short records of significant decisions, so future-you knows *why*.
 | 0030 | [Initial feature types and conventions](0030-initial-feature-types-and-conventions.md) | standards, architecture | Accepted |
 | 0031 | [Review format](0031-review-format.md) | process | Accepted |
 | 0032 | [Style framework v0: features as Agent Skills](0032-style-framework-v0.md) | standards, architecture | Accepted |
-| 0033 | [A feature's approval tier is set when it's accepted](0033-feature-tier-set-on-acceptance.md) | process, features | Proposed |
+| 0033 | [A feature's approval tier is set when it's accepted](0033-feature-tier-set-on-acceptance.md) | process, features | Accepted |
 
 **Tags:** philosophy, features, architecture, implementation, plus process, identity, hardware, standards, security and roadmap so far. New tags are added as they come up.

@@ -1,6 +1,6 @@
 # Decision loop: a feature's tier is set when it's accepted
 
-- **Started:** 2026-11-03 · **Status:** Open
+- **Started:** 2026-11-03 · **Status:** Closed
 - **Source:** chat, during T10
 
 ## Input
@@ -30,7 +30,10 @@ Context: this answers the T10 plan's question. Under 0028, everything starts at 
 2. Must a review that asks to accept a feature state its declared tier under "Approval needed"? *Recommended:* yes.
 
 **Answers:**
-*(pending)*
+1. "that can be just a feature edit rather than a decision, yes"
+2. "yes as well to a review stating tier"
+
+**Changes made:** none needed. Both answers match the draft.
 
 ## Outcome
-*(On close.)*
+Closed 2026-11-03. **0033 accepted.** 0028 now has a "Partly superseded by 0033" line. `AGENTS.md`, the style guide and the review template now point to 0033. Suggested next step: none. The round 3 summary already covers 0033.

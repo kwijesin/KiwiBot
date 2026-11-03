@@ -57,6 +57,7 @@ Approval follows [0028](docs/decisions/0028-initial-approval-rules.md). In short
   - drafting Proposed decisions;
   - adding items to `deferred.md`;
   - fixing typos and broken links.
+- **A feature's tier** is its declared `approval_tier`, set when the user accepts the feature ([0033](docs/decisions/0033-feature-tier-set-on-acceptance.md)). A review that asks for a feature to be accepted must state that tier.
 - When the work is committed, set the task to `⏸ Awaiting review` and stop.
 
 **Daily rhythm** ([0022](docs/decisions/0022-first-build-priority.md)): The user reviews in the morning and again later in the day. Leave work at a clean stopping point with a review note ready.

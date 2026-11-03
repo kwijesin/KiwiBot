@@ -101,7 +101,7 @@ The working rules (how to pick, plan, test, review and approve tasks) live in [A
   - [x] The feature exists in the style framework format.
 
 ### T10: Synthesis/cascade feature (round summaries)
-- **Status:** ⏸ Awaiting review · **Size:** S · **Depends on:** T09
+- **Status:** ☑ Done · **Size:** S · **Depends on:** T09
 - **Decisions:** 0001, 0019; process in `docs/decisions/planning/README.md`
 - **Goal:** Produce a round summary: what changed, knock-on effects, new questions and deferred items.
 - **Done when:**

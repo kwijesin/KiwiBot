@@ -45,7 +45,7 @@ description: >-
 metadata:
   type: prompt                 # prompt | script | prompt+script
   status: draft                # draft | active | retired
-  approval_tier: "3"           # 0028: 3 plan+result, 2 result, 1 notify, 0 none
+  approval_tier: "3"           # 0028: 3 plan+result, 2 result, 1 notify, 0 none; set when the feature is accepted (0033)
   model_class: frontier        # 0020: frontier | local | any
   model_needs: file_read       # comma-separated: file_read, file_write, shell, tool_use, long_context
   decisions: "0029"            # comma-separated decisions it implements

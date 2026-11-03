@@ -39,6 +39,7 @@ This is the live register of decisions that have been **consciously put off**. E
 | D17 | **Skill / tool format** | 0011, 0025 | Earlier draft: a decorator declaring name, description, input schema, `confirm` and `cloud_ok`. Skills should be idempotent and return a short, speakable result. Approval flags overlap with 0025. **Naming:** rename runtime "skills" to **tools** when this is decided. "Skill" now means an Agent Skills feature folder (0032). | When the first runtime skill is built |
 | D18 | **Configuration format and location**, including how models are connected (0020) | 0020 | Earlier draft: `config/*.yaml` for settings and `.env` for secrets, with example files committed and real ones git-ignored. | Before the first configurable component |
 | D37 | **Visual style** (the visual half of 0011) | 0011, 0032 | Colours, type and layout across interfaces. The mirror needs a black background with bright elements (0009). | When the first UI is built |
+| D38 | **Priority review:** some features or changes reviewed ahead of others (0025) | 0025, 0029 | The review queue is oldest task first for now. Raised by the round 3 summary (4.7). | When the review queue regularly holds more than a few items, or at task system design (T14, D13) |
 
 ## Runtime assistant
 

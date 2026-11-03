@@ -3,9 +3,16 @@
 - **Round:** 3
 - **Date:** 2026-11-03
 - **Builds on:** [Round 2 synthesis](../../history/planning/round-02-summary.md)
-- **Covers:** Decisions 0028–0033 (6 new: 5 Accepted, 1 still Proposed; none superseded in full, 0028 rule 5 partly superseded by Proposed 0033; none rejected), and decision loops closed since the last round (none closed; one open: [loop-2026-11-03-feature-tier-on-acceptance](loop-2026-11-03-feature-tier-on-acceptance.md)).
+- **Covers:** Decisions 0028–0033 (6 new: 5 Accepted, 1 still Proposed; none superseded in full, 0028 rule 5 partly superseded by Proposed 0033; none rejected), and decision loops closed since the last round (none closed; one open: [loop-2026-11-03-feature-tier-on-acceptance](../../history/decision-loops/loop-2026-11-03-feature-tier-on-acceptance.md)).
 
 Round 2 ended planning. This round covers what building has decided since: M0's working rules (0028–0030), M1's first standards (0031, 0032), and one Proposed change to how feature tiers are set (0033). Round 2's critical-path questions are now answered: the initial approval rules (0028) and the bootstrap workflow (0029). The decision loop is now a feature and has run once. This is the first round summary written by the synthesis feature (T10), so it's also a demo of it.
+
+> **Cascade status (2026-11-03, the user's answers in the T10 review):**
+> - 4.1: done. 0033 accepted.
+> - 4.2, 4.3, 4.4, 4.6: one decision-loop run, **pending** until after T11.
+> - 4.5: its own decision-loop run, **pending** until after T11.
+> - 4.7: deferred as D38.
+> - 4.8, 4.9: become tasks through T11.
 
 ---
 

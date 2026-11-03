@@ -3,6 +3,7 @@
 - **Status:** Accepted
 - **Date:** 2026-11-02
 - **Tags:** process, features
+- **Partly superseded by:** [0033](0033-feature-tier-set-on-acceptance.md) (rule 5, for features)
 
 ## Decision
 This is the "early decision" called for in 0025. It sets the approval rules KiwiBot starts with.
