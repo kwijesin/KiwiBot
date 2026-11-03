@@ -4,7 +4,7 @@ Short records of significant decisions, so future-you knows *why*.
 
 - Deferred decisions are tracked in [deferred.md](deferred.md). The planning process is described in [planning/](planning/).
 - Copy `0000-template.md` to `NNNN-short-title.md` (next number).
-- Status: `Proposed` → `Accepted` → (later) `Superseded by NNNN`.
+- Status: `Proposed` → `Accepted` → (later) `Superseded by NNNN`. A Proposed decision the user turns down becomes `Rejected` and is kept, not deleted.
 - During planning, decisions can be revised. Add a `Revised` line when you do. After planning, supersede them with a new decision instead of editing.
 
 | # | Title | Tags | Status |

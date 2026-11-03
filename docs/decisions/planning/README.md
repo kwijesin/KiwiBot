@@ -17,3 +17,5 @@ This is the same shape as the self-improvement pipeline's decision loop (0019). 
 - The outcomes have been applied to the rest of `docs/`, and the [first task list](../../tasks/task-list.md) has been written.
 
 Future rounds write their working summaries here, and the summaries are archived to `docs/history/planning/` once the round is applied.
+
+The [decision-loop](../../../features/decision-loop/SKILL.md) feature automates steps 1 and 3 for one input at a time. Each run keeps a **loop record** here, `loop-YYYY-MM-DD-<slug>.md`.
