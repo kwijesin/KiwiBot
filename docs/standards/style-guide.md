@@ -82,6 +82,7 @@ Markdown data (decisions, tasks, reviews) isn't a feature folder. Each data set 
 | Decisions | [docs/decisions/](../decisions/) | [0000-template.md](../decisions/0000-template.md) (older name, kept) |
 | Tasks | [docs/tasks/](../tasks/) | [template.md](../tasks/template.md) |
 | Reviews | [docs/reviews/](../reviews/) | [template.md](../reviews/template.md) |
+| Inbox | [inbox/](../../inbox/), at the root, not in `docs/` (0035) | None: items are free text. The capture format is in its README. |
 
 ## Example
 

@@ -18,6 +18,7 @@
 | [setup.md](setup.md) | How KiwiBot is worked on today |
 | [skills.md](skills.md) | Placeholder; candidate skills |
 | [history/](history/) | Archived intermediate files, e.g. planning round summaries |
+| [../inbox/](../inbox/) | The user's rough, human-written ideas, waiting to be triaged (0034–0036). Lives at the repo root. |
 
 ## Conventions
 

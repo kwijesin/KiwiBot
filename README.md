@@ -22,6 +22,7 @@ KiwiBot/
 ├── AGENTS.md               ← entry point and working rules for any agent
 ├── CLAUDE.md               ← imports AGENTS.md for Claude
 ├── features/               ← one folder per feature, Agent Skills format (0032)
+├── inbox/                  ← the user's rough ideas, waiting to be triaged (0034)
 └── docs/
     ├── README.md           ← documentation index
     ├── decisions/          ← decisions (NNNN-*.md), deferred register, planning process

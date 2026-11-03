@@ -165,14 +165,14 @@ The working rules (how to pick, plan, test, review and approve tasks) live in [A
 - **Notes:** Added during T07. Likely the first script feature (0007). Other agents' skill locations can be added when they're used (0020).
 
 ### T19: Inbox folder v0
-- **Status:** ☐ Todo · **Size:** S · **Depends on:** none
+- **Status:** ⏸ Awaiting review · **Size:** S · **Depends on:** none
 - **Decisions:** 0034, 0035 → partly resolves **D03**
 - **Goal:** Create the inbox as markdown data, so the user can start dropping files in.
 - **Done when:**
-  - [ ] `inbox/README.md` exists. It says what belongs in the inbox (human-written only, verbatim; 0034), how to add an item (drop any `.txt` or `.md` file, or use the capture skill), the capture skill's file name and front matter format, and that parked items stay here (0036).
-  - [ ] `docs/history/inbox/README.md` exists, saying triaged items land there with front matter recording the triage date and route (0036).
-  - [ ] The style guide's markdown data section notes the inbox exception: it lives at the root, not in `docs/` (0035).
-  - [ ] `AGENTS.md` (map), `README.md` (layout) and `docs/README.md` list the inbox.
+  - [x] `inbox/README.md` exists. It says what belongs in the inbox (human-written only, verbatim; 0034), how to add an item (drop any `.txt` or `.md` file, or use the capture skill), the capture skill's file name and front matter format, and that parked items stay here (0036).
+  - [x] `docs/history/inbox/README.md` exists, saying triaged items land there with front matter recording the triage date and route (0036).
+  - [x] The style guide's markdown data section notes the inbox exception: it lives at the root, not in `docs/` (0035).
+  - [x] `AGENTS.md` (map), `README.md` (layout) and `docs/README.md` list the inbox.
 - **Notes:** Added by task-planner from 0034–0035 (T13, inbox decision loop).
 
 ### T20: inbox-capture feature

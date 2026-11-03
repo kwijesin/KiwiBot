@@ -19,6 +19,7 @@ KiwiBot is the user's personal assistant, efficiency accelerator and extra inter
 | History (archived planning rounds) | [docs/history/](docs/history/) |
 | External dependencies (runtimes, tools, services, accounts) | [docs/dependencies.md](docs/dependencies.md) |
 | Features (Agent Skills folders) | [features/](features/), see the [style guide](docs/standards/style-guide.md) |
+| **Inbox** (the user's rough, human-written ideas, waiting to be triaged) | [inbox/](inbox/) ([0034](docs/decisions/0034-inbox.md)–[0036](docs/decisions/0036-inbox-triage.md)); triaged items in [docs/history/inbox/](docs/history/inbox/) |
 | Other docs (architecture, models, hardware, etc.) | [docs/README.md](docs/README.md) |
 
 ## How to work
