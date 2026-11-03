@@ -21,11 +21,13 @@ KiwiBot/
 ├── README.md               ← you are here
 ├── AGENTS.md               ← entry point and working rules for any agent
 ├── CLAUDE.md               ← imports AGENTS.md for Claude
+├── features/               ← one folder per feature, Agent Skills format (0032)
 └── docs/
     ├── README.md           ← documentation index
     ├── decisions/          ← decisions (NNNN-*.md), deferred register, planning process
     ├── tasks/              ← task list (bootstrap until the custom task system exists)
     ├── reviews/            ← one review note per task (0029)
+    ├── standards/          ← style guide (and testing guide, T08)
     ├── history/            ← archived intermediate files (planning rounds)
     ├── dependencies.md     ← external resources KiwiBot relies on
     ├── architecture.md     ← decided shape; mostly placeholder

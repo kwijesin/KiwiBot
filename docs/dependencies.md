@@ -9,6 +9,7 @@ Every external resource KiwiBot relies on: runtimes, tools, services and hosted 
 | Python | 3.11+, standalone install, per-project virtual environment (not a tool-bundled interpreter) | M1 scripts | 0030 | 2026-11-03 |
 | Git | any recent | Version control and development history | 0006 | 2026-11-02 |
 | GitHub | private repository `kwijesin/KiwiBot` | Remote for development history | 0006 | 2026-11-02 |
+| Agent Skills format | [specification](https://agentskills.io/specification) | Format of every feature folder (`SKILL.md`) | 0032 | 2026-11-03 |
 | Frontier agent (currently Claude, via Claude Code) | n/a | Builds KiwiBot; all core programming | 0005, 0020, 0022 | 2026-11-02 |
 
 ## Planned (decided, not yet in use)

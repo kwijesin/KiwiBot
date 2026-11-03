@@ -82,15 +82,15 @@ The working rules (how to pick, plan, test, review and approve tasks) live in [A
   - [x] A review of the M0 work is written using it.
 
 ### T07: Style framework v0
-- **Status:** ☐ Todo · **Size:** M · **Depends on:** T05
+- **Status:** ⏸ Awaiting review · **Size:** M · **Depends on:** T05
 - **Decisions:** 0010, 0011, 0020, 0025
 - **Goal:** Consistent structure for the M1 feature types, mainly prompt-based features.
 - **Done when:**
-  - [ ] A style guide covers:
+  - [x] A style guide covers:
     - folder layout per feature (e.g. `features/<name>/` with its README, prompt files and tests);
     - naming;
     - feature metadata, including the **approval tier** (0025) and **model requirements** (0020).
-  - [ ] The guide is shown applied to a small example feature.
+  - [x] The guide is shown applied to a small example feature.
 - **Notes:** Visual style (0011) can wait until there's a UI. Add it to `deferred.md` if needed.
 
 ### T08: Testing framework v0
@@ -145,6 +145,15 @@ The working rules (how to pick, plan, test, review and approve tasks) live in [A
   - [ ] A short retrospective lists what to improve in the loop, and those improvements become new tasks (via T11).
   - [ ] **D07** (branching, commit style, versioning, milestone tags, change-size guideline) is decided, informed by how M1 went.
   - [ ] M1 is complete and tagged as a version (per D07).
+
+### T18: Expose features as Claude Code skills
+- **Status:** ☐ Todo · **Size:** S · **Depends on:** T07, T08
+- **Decisions:** 0032, 0007, 0020
+- **Goal:** Make every `features/<name>/` discoverable by Claude Code, which only looks in `.claude/skills/`, without keeping two copies of anything.
+- **Done when:**
+  - [ ] A script feature (e.g. `features/skill-sync/`) links or syncs `features/*` into `.claude/skills/`, and works on Windows.
+  - [ ] It's tested per T08, and `AGENTS.md` says when to run it.
+- **Notes:** Added during T07. Likely the first script feature (0007). Other agents' skill locations can be added when they're used (0020).
 
 ---
 
