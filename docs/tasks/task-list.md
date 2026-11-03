@@ -120,19 +120,19 @@ The working rules (how to pick, plan, test, review and approve tasks) live in [A
 - **Goal:** Formalize "How to work this list" as a feature or agent instruction set: pick a task, plan, get approval if required, execute in small increments, test, write the review note, and stop at about 80% for review.
 - **Done when:**
   - [x] The workflow exists and the agent entry point refers to it.
-  - [ ] The next task (T08) is carried out using it.
+  - [x] The next task (T08) is carried out using it.
 
 ### T08: Testing framework v0
-- **Status:** ☐ Todo · **Size:** M · **Depends on:** T05, T07, T09, T10, T11, T12
+- **Status:** ⏸ Awaiting review · **Size:** M · **Depends on:** T05, T07, T09, T10, T11, T12
 - **Decisions:** 0012, 0013, 0027 (no sandbox yet)
 - **Done when:**
-  - [ ] A testing guide exists:
+  - [x] A testing guide exists:
     - **Prompt-based features:** fixture inputs, an expected-outcome checklist, an agent run, and a pass/fail result recorded. Human-judged pass/fail is allowed for now.
     - **Scripts:** standard unit tests in the language chosen in T05.
-  - [ ] There's a test template and one example test that passes.
-  - [ ] Test output is written to be useful feedback for an agent (0012).
-  - [ ] Tests exist for the M1 features. These test items moved here from their tasks so T09–T12 aren't held up by test runs:
-    - **decision-loop (T09):** replaying one of my original planning paragraphs from `docs/history/planning/` (e.g. the testing paragraph behind 0012) gives a decision equivalent to the recorded one, with sensible related decisions and questions.
+  - [x] There's a test template and one example test that passes.
+  - [x] Test output is written to be useful feedback for an agent (0012).
+  - [x] Tests exist for the M1 features. These test items moved here from their tasks so T09–T12 aren't held up by test runs:
+    - **decision-loop (T09):** replaying one of my original planning paragraphs from `docs/history/planning/` (e.g. the testing paragraph behind 0012) gives a decision equivalent to the recorded one, with sensible related decisions and questions. *Changed during T08 (round 3, item 4.8): those paragraphs weren't kept, so the case replays the closed 0033 loop's input instead.*
     - **Synthesis (T10):** run over decisions 0025–0027, it surfaces the main knock-on effects found in the archived round 2 summary (approval decision on the critical path, bootstrap, agent-readable root).
     - **Plan → task (T11):** it generates sensible, small tasks for one accepted decision, and I approve them.
     - **review-queue (T07 example).**

@@ -27,7 +27,7 @@ KiwiBot/
     ├── decisions/          ← decisions (NNNN-*.md), deferred register, planning process
     ├── tasks/              ← task list (bootstrap until the custom task system exists)
     ├── reviews/            ← one review note per task (0029)
-    ├── standards/          ← style guide (and testing guide, T08)
+    ├── standards/          ← style guide, testing guide
     ├── history/            ← archived intermediate files (planning rounds)
     ├── dependencies.md     ← external resources KiwiBot relies on
     ├── architecture.md     ← decided shape; mostly placeholder
