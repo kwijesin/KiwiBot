@@ -21,5 +21,6 @@ One review note per task, kept in git so the review history isn't lost ([0029](.
 | [T08: testing framework v0](T08-testing-framework.md) | ☑ Done |
 | [T19: inbox folder v0](T19-inbox-folder.md) | ⏸ Awaiting review |
 | [T20: inbox-capture feature](T20-inbox-capture.md) | ⏸ Awaiting review |
+| [T21: inbox-triage feature](T21-inbox-triage.md) | ⏸ Awaiting review |
 
 T01–T03 were reviewed in the chat only, before review files existed. [M0-bootstrap.md](M0-bootstrap.md) covers them.

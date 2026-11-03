@@ -186,13 +186,13 @@ The working rules (how to pick, plan, test, review and approve tasks) live in [A
 - **Notes:** Added by task-planner from 0034–0035 (T13, inbox decision loop).
 
 ### T21: inbox-triage feature
-- **Status:** ☐ Todo · **Size:** M · **Depends on:** T19
+- **Status:** ⏸ Awaiting review · **Size:** M · **Depends on:** T19
 - **Decisions:** 0036, 0034
 - **Goal:** A prompt feature that proposes one route per inbox item, waits for the user's confirmation, runs the routes and archives the items.
 - **Done when:**
-  - [ ] `features/inbox-triage/SKILL.md` exists in the style guide format. It pulls first (0035), proposes one route per item (decision-loop, task-planner, existing task, park, drop), runs nothing before the user confirms (0036), passes each item's text word for word to decision-loop, and moves routed and dropped items to `docs/history/inbox/` with the triage front matter.
-  - [ ] Its review states the declared `approval_tier` (0033).
-  - [ ] At least one prompt test case passes, with fixture items of several kinds, checking the proposed routes and that nothing changes before confirmation.
+  - [x] `features/inbox-triage/SKILL.md` exists in the style guide format. It pulls first (0035), proposes one route per item (decision-loop, task-planner, existing task, park, drop), runs nothing before the user confirms (0036), passes each item's text word for word to decision-loop, and moves routed and dropped items to `docs/history/inbox/` with the triage front matter.
+  - [x] Its review states the declared `approval_tier` (0033).
+  - [x] At least one prompt test case passes, with fixture items of several kinds, checking the proposed routes and that nothing changes before confirmation.
 - **Notes:** Added by task-planner from 0036 (T13, inbox decision loop).
 
 ### T22: Inbox count at session start
