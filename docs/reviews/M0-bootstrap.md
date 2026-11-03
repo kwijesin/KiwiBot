@@ -1,6 +1,6 @@
 # Review: M0, bootstrap
 
-- **Task:** M0 (T01–T05) · **Status:** ⏸ Awaiting review · **Date:** 2026-11-03
+- **Task:** M0 (T01–T05) · **Status:** ☑ Done · **Date:** 2026-11-03
 - **Commits:** `bed2e36`…`63a886d` (T01–T05)
 - **Tier:** 2 (result). There's no plan to approve: this is a review of work that has already been approved task by task.
 
@@ -49,4 +49,6 @@ None.
 2. Should there be a task to test `AGENTS.md` with a non-Claude agent (e.g. a local model, once D10 is decided), or should it wait until T13's retrospective?
 
 ## Outcome
-*(Filled in when the task is closed.)*
+Approved by the user in the chat on 2026-11-03. M0 is complete. Answers to the open questions:
+1. Two commits per task is fine for now. Once git uses branches (D07), the closing commit will also cover the merge and squash the branch into a single commit. This is recorded in `AGENTS.md` and in D07.
+2. Building is Claude-only for a while, since the core is built on frontier models. Testing `AGENTS.md` with a non-Claude agent happens when local models come in, alongside the model-launching work (e.g. LM Studio). This is noted on D10.

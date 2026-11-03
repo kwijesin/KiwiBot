@@ -1,6 +1,6 @@
 # 0031. Review format
 
-- **Status:** Proposed
+- **Status:** Accepted
 - **Date:** 2026-11-03
 - **Tags:** process
 

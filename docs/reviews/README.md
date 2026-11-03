@@ -11,7 +11,7 @@ One review note per task, kept in git so the review history isn't lost ([0029](.
 |---|---|
 | [T04: bootstrap workflow](T04-bootstrap-workflow.md) | ☑ Done |
 | [T05: feature types and conventions](T05-feature-types-and-conventions.md) | ☑ Done |
-| [M0: bootstrap](M0-bootstrap.md) | ⏸ Awaiting review |
-| [T06: review format](T06-review-format.md) | ⏸ Awaiting review |
+| [M0: bootstrap](M0-bootstrap.md) | ☑ Done |
+| [T06: review format](T06-review-format.md) | ☑ Done |
 
 T01–T03 were reviewed in the chat only, before review files existed. [M0-bootstrap.md](M0-bootstrap.md) covers them.

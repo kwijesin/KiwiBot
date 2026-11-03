@@ -29,7 +29,7 @@ KiwiBot is the user's personal assistant, efficiency accelerator and extra inter
 5. **Keep it small** ([0017](docs/decisions/0017-small-increments.md)). One task means one well-bounded change and one review. If a task grows, split it and add the new tasks to the task list.
 6. **Don't decide silently.** If the work needs a decision that isn't in `docs/decisions/`, draft it from `0000-template.md` with status **Proposed** and ask the user (the [0019](docs/decisions/0019-self-improvement-pipeline.md) decision loop). If something can wait, add it to `deferred.md`.
 7. **Test what you build** ([0012](docs/decisions/0012-test-everything.md)), including prompt-based work where you can. There's no sandbox yet ([0027](docs/decisions/0027-early-features-agent-driven.md)). **Until the testing framework exists (T08), tests are only done where a task's done-when list asks for one.**
-8. **Finish with a review note** in `docs/reviews/Txx-short-name.md`, committed with the task, and give the same text in the chat. Use these headings: what changed, why, consequences, test results, approval needed, done without approval (tier 1), open questions, outcome. T06 will define the proper format. When the task is closed, fill in the outcome.
+8. **Finish with a review note** in `docs/reviews/Txx-short-name.md`, committed with the task, and give the same text in the chat. Copy [docs/reviews/template.md](docs/reviews/template.md) ([0031](docs/decisions/0031-review-format.md)). When the task is closed, fill in the outcome.
 9. **Update the task list:** the task's status, ticked done-when boxes, and any new tasks discovered along the way. New tasks go in as `☐ Todo` with all the usual fields, the next free ID and an "Added during Txx" note. Never renumber or delete tasks. Mark unneeded ones `✕ Dropped` with a reason.
 
 ## Conventions
@@ -42,7 +42,7 @@ From [0030](docs/decisions/0030-initial-feature-types-and-conventions.md):
 
 ## Git (interim)
 
-Git conventions (branching, versioning, tags) are deferred to the end of M1 (D07). Until then, **commit straight to `main`, one commit per task**, and push to `origin` once the task's commit is made.
+Git conventions (branching, versioning, tags) are deferred to the end of M1 (D07). Until then, **commit straight to `main`, with two commits per task**: one for the work (task at `⏸`), and one closing commit on approval (task at `☑`). Push to `origin` after each commit.
 
 ## Approval
 

@@ -16,7 +16,7 @@ This is the live register of decisions that have been **consciously put off**. E
 | D04 | **Working schedule** around the build model's usage window | 0022 | Overnight runs, scheduled bursts, etc. | TBD |
 | D05 | **Initial approval rules** (the "early decision" in 0025) | 0025 | What needs approval at the start and what form approval takes. | **Decided → [0028](0028-initial-approval-rules.md)** |
 | D06 | **Bootstrap workflow:** where tasks and reviews live before KiwiBot's own systems exist | 0016, 0021, 0022 | Markdown task list in the repo (in use now: [tasks/task-list.md](../tasks/task-list.md)); reviews as GitHub pull requests and/or markdown review notes. | **Decided → [0029](0029-bootstrap-workflow.md)** (D07 split off, deferred to end of M1) |
-| D07 | **Branching, versioning and merge conventions** | 0006, 0017 | Branch per task, semantic versioning, milestone tags. **Interim (until decided):** commit straight to `main`, one commit per task. | End of M1 (task list T13) |
+| D07 | **Branching, versioning and merge conventions** | 0006, 0017 | Branch per task, semantic versioning, milestone tags. **Interim (until decided):** commit straight to `main`, two commits per task (the work, then a closing commit on approval). **Direction from the user:** with branches, the closing commit also covers the merge and squashes the branch into a single commit. | End of M1 (task list T13) |
 
 ## Models
 
@@ -24,7 +24,7 @@ This is the live register of decisions that have been **consciously put off**. E
 |---|---|---|---|---|
 | D08 | **Escalation triggers and routing modes:** what runs locally vs on frontier models | 0005, 0020 | Earlier draft modes: `local_only`, `local_first`, `auto`, `cloud_preferred`. Earlier draft triggers: explicit request, task type on an allow-list, context larger than the local window, repeated tool-call failures. | When the first runtime feature could run locally |
 | D09 | **What "local-first" means for now** | 0005, 0027 | Likely reading: local-first applies to day-to-day **runtime** features, and **building** uses frontier models. Needs confirming. | With D08 |
-| D10 | **Local model choices and serving runtime** | 0005, 0020 | Roles: main tool-use LLM, small fast LLM, embeddings. Runtimes: Ollama, llama.cpp, vLLM, LM Studio (an OpenAI-compatible endpoint keeps routing simple). | With D08 and host hardware (D24) |
+| D10 | **Local model choices and serving runtime** | 0005, 0020 | Roles: main tool-use LLM, small fast LLM, embeddings. Runtimes: Ollama, llama.cpp, vLLM, LM Studio (an OpenAI-compatible endpoint keeps routing simple). Building is Claude-only until then; when local models come in, also test that `AGENTS.md` works with a non-Claude agent (open since T02). | With D08 and host hardware (D24) |
 | D11 | **Resource metering:** token self-checks, attention metering, cloud call logging | 0015 | Earlier draft: log each cloud call with timestamp, provider, model, token count and reason, but not prompt content. | When efficiency becomes a priority |
 | D12 | **Model evaluation suite** | 0012, 0013 | Earlier draft: a set of household requests (timers, device control, Q&A, multi-step) to compare models and tune routing. | With D08 |
 
@@ -33,7 +33,7 @@ This is the live register of decisions that have been **consciously put off**. E
 | ID | Item | Source | Candidates / notes | Revisit when |
 |---|---|---|---|---|
 | D13 | **Task system structure:** which lists, fields, format | 0016 | At least "my tasks" and "KiwiBot's tasks". Fully custom. | When designing the task system (T14) |
-| D14 | **What a review contains** | 0021 | What changed, why, consequences, test results, approvals needed, questions. | With D06 (T06) |
+| D14 | **What a review contains** | 0021 | What changed, why, consequences, test results, approvals needed, questions. | **Decided → [0031](0031-review-format.md)** |
 | D15 | **Languages, runtimes and casing convention** | 0010 | **Partly decided → [0030](0030-initial-feature-types-and-conventions.md):** Python 3.11+ for M1 scripts, casing convention. Still open: languages/runtimes for services and apps. | When the first service or app is built |
 | D16 | **Feature types** for the style and testing frameworks | 0011, 0013 | **Partly decided → [0030](0030-initial-feature-types-and-conventions.md):** prompt feature, markdown data, script. Still open: service, app, hardware integration, MagicMirror module. | When each later type is first needed |
 | D17 | **Skill / tool format** | 0011, 0025 | Earlier draft: a decorator declaring name, description, input schema, `confirm` and `cloud_ok`. Skills should be idempotent and return a short, speakable result. Approval flags overlap with 0025. | When the first runtime skill is built |

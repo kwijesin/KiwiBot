@@ -59,7 +59,7 @@ The working rules (how to pick, plan, test, review and approve tasks) live in [A
     - **Tasks:** confirm this markdown file as the interim task list, and how tasks are added and updated.
     - **Reviews:** where they happen and how the morning and later-day reviews work in practice (0022). (No PRs while everything goes straight to `main`; see the note below.)
   - [x] D06 is marked decided, and the agent entry point is updated.
-- **Notes:** Git conventions (**D07**: branching, versioning, tags, change size) are deferred to the end of M1 (T13). Until then: everything is committed straight to `main`, **one commit per task**.
+- **Notes:** Git conventions (**D07**: branching, versioning, tags, change size) are deferred to the end of M1 (T13). Until then: everything is committed straight to `main`, two commits per task (the work, then a closing commit).
 
 ### T05: Decide the initial feature types and coding conventions
 - **Status:** ☑ Done · **Size:** S · **Depends on:** T04
@@ -75,7 +75,7 @@ The working rules (how to pick, plan, test, review and approve tasks) live in [A
 ## M1: Self-improvement loop v0
 
 ### T06: Define the review format and write the first review
-- **Status:** ⏸ Awaiting review · **Size:** S · **Depends on:** T03, T04
+- **Status:** ☑ Done · **Size:** S · **Depends on:** T03, T04
 - **Decisions:** 0021, 0022, 0025 → resolves **D14**
 - **Done when:**
   - [x] A review template exists where T04 decided reviews live. It covers: what changed, why, consequences, test results, approval needed (per 0028), and questions for me.

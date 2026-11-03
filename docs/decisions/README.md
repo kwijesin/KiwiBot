@@ -39,6 +39,6 @@ Short records of significant decisions, so future-you knows *why*.
 | 0028 | [Initial approval rules](0028-initial-approval-rules.md) | process, features | Accepted |
 | 0029 | [Bootstrap workflow: tasks and reviews](0029-bootstrap-workflow.md) | process | Accepted |
 | 0030 | [Initial feature types and conventions](0030-initial-feature-types-and-conventions.md) | standards, architecture | Accepted |
-| 0031 | [Review format](0031-review-format.md) | process | Proposed |
+| 0031 | [Review format](0031-review-format.md) | process | Accepted |
 
 **Tags:** philosophy, features, architecture, implementation, plus process, identity, hardware, standards, security and roadmap so far. New tags are added as they come up.

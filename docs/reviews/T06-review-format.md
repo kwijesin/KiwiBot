@@ -1,7 +1,7 @@
 # Review: T06, review format
 
-- **Task:** T06 · **Status:** ⏸ Awaiting review · **Date:** 2026-11-03
-- **Commits:** see the T06 commit on `main`
+- **Task:** T06 · **Status:** ☑ Done · **Date:** 2026-11-03
+- **Commits:** `4ad1495`, plus the closing commit
 - **Tier:** 3 (plan + result)
 
 ## What changed
@@ -35,4 +35,4 @@ None (interim rule: no tests before T08).
 None beyond those in the M0 review.
 
 ## Outcome
-*(Filled in when the task is closed.)*
+Approved by the user in the chat on 2026-11-03 ("approve of 0031 and the M0"). 0031 accepted, D14 marked decided, and rule 8 in `AGENTS.md` now points to the template.
