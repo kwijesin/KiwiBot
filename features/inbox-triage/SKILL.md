@@ -7,7 +7,7 @@ description: >-
   process the inbox, or to go through their captured ideas.
 metadata:
   type: prompt
-  status: draft
+  status: active
   approval_tier: "3"
   model_class: frontier
   model_needs: file_read,file_write,shell

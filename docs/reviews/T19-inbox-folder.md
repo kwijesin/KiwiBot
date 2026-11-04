@@ -1,7 +1,7 @@
 # Review: T19, inbox folder v0
 
-- **Task:** T19 · **Status:** ⏸ Awaiting review · **Date:** 2026-11-03
-- **Commits:** the T19 work commit
+- **Task:** T19 · **Status:** ☑ Done · **Date:** 2026-11-03
+- **Commits:** `ce5c07f`, plus the T19–T22 closing commit
 - **Tier:** 3 (plan + result). Trial: the plan was approved for T19–T22 as one set, and the result is reviewed with them in one combined review (T13, retrospective input 3).
 
 ## What changed
@@ -30,4 +30,4 @@ None. This is markdown data with no behaviour of its own. It's exercised by the 
 None.
 
 ## Outcome
-*(Filled in when the task is closed.)*
+**Approved** 2026-11-03, as one set with T19–T22 (the feature-level approval trial). The user: "approved for 1-4, lets use it for something". The inbox folder and its format accepted.

@@ -7,7 +7,7 @@ description: >-
   any chat-style interface.
 metadata:
   type: prompt
-  status: draft
+  status: active
   approval_tier: "0"
   model_class: any
   model_needs: file_write,shell

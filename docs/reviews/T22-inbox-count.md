@@ -1,7 +1,7 @@
 # Review: T22, inbox count at session start
 
-- **Task:** T22 · **Status:** ⏸ Awaiting review · **Date:** 2026-11-03
-- **Commits:** the T22 work commit
+- **Task:** T22 · **Status:** ☑ Done · **Date:** 2026-11-03
+- **Commits:** `57a8dfd`, plus the T19–T22 closing commit
 - **Tier:** 3 (plan + result). Trial: part of the T19–T22 set, reviewed together (T13, retrospective input 3).
 
 ## What changed
@@ -28,4 +28,4 @@
 None.
 
 ## Outcome
-*(Filled in when the task is closed.)*
+**Approved** 2026-11-03, as one set with T19–T22 (the feature-level approval trial). The user: "approved for 1-4, lets use it for something". The `review-queue` change accepted; its tier stays 1.

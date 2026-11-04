@@ -1,7 +1,7 @@
 # Review: T20, inbox-capture feature
 
-- **Task:** T20 · **Status:** ⏸ Awaiting review · **Date:** 2026-11-03
-- **Commits:** the T20 work commit
+- **Task:** T20 · **Status:** ☑ Done · **Date:** 2026-11-03
+- **Commits:** `bbdc4a3`, plus the T19–T22 closing commit
 - **Tier:** 3 (plan + result). Trial: part of the T19–T22 set, reviewed together (T13, retrospective input 3).
 
 ## What changed
@@ -43,4 +43,4 @@ It also noted that a plain `git push` fails on a detached HEAD, which only happe
 None.
 
 ## Outcome
-*(Filled in when the task is closed.)*
+**Approved** 2026-11-03, as one set with T19–T22 (the feature-level approval trial). The user: "approved for 1-4, lets use it for something". `inbox-capture` accepted at tier 0, status `active`.

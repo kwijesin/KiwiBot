@@ -19,9 +19,9 @@ One review note per task, kept in git so the review history isn't lost ([0029](.
 | [T11: task-planner feature](T11-task-planner.md) | ☑ Done |
 | [T12: task-runner feature](T12-task-runner.md) | ☑ Done |
 | [T08: testing framework v0](T08-testing-framework.md) | ☑ Done |
-| [T19: inbox folder v0](T19-inbox-folder.md) | ⏸ Awaiting review |
-| [T20: inbox-capture feature](T20-inbox-capture.md) | ⏸ Awaiting review |
-| [T21: inbox-triage feature](T21-inbox-triage.md) | ⏸ Awaiting review |
-| [T22: inbox count at session start](T22-inbox-count.md) | ⏸ Awaiting review |
+| [T19: inbox folder v0](T19-inbox-folder.md) | ☑ Done |
+| [T20: inbox-capture feature](T20-inbox-capture.md) | ☑ Done |
+| [T21: inbox-triage feature](T21-inbox-triage.md) | ☑ Done |
+| [T22: inbox count at session start](T22-inbox-count.md) | ☑ Done |
 
 T01–T03 were reviewed in the chat only, before review files existed. [M0-bootstrap.md](M0-bootstrap.md) covers them.

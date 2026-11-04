@@ -31,6 +31,8 @@ KiwiBot is the user's personal assistant, efficiency accelerator and extra inter
    - [decision-loop](features/decision-loop/SKILL.md): new intent or a missing decision goes here. **Don't decide silently.**
    - [task-planner](features/task-planner/SKILL.md): turn accepted decisions or new work into `☐ Todo` tasks.
    - [synthesis](features/synthesis/SKILL.md): a round summary after decision loops close.
+   - [inbox-capture](features/inbox-capture/SKILL.md): when the user says "capture: …", put their words, verbatim, in the inbox.
+   - [inbox-triage](features/inbox-triage/SKILL.md): route inbox items into the loop, after the user confirms the routes.
 4. **Testing:** until the testing framework exists (T08), tests are only done where a task's done-when list asks for one ([0012](docs/decisions/0012-test-everything.md)).
 
 ## Conventions

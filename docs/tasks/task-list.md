@@ -148,6 +148,7 @@ The working rules (how to pick, plan, test, review and approve tasks) live in [A
   1. **Commit leeway.** The user: "The one commit per task rule may require some leeway as I'm sure we'll make other tasks that require it - tasks that examine other tasks, tasks that get started and then find that it depends on a different task finishing first, etc." Also: capture commits (`inbox: <slug>`, 0035) are a commit kind outside tasks. Feeds D07.
   2. **decision-loop drafts settle what the input didn't say.** Its replay test failed 6/7 (item 6). Suggested fix in the test's Last run.
   3. **Approval at the feature level.** The user, approving T19–T22 as a set: "because the system works together as a whole, and you even prompt approval as a group, that the intermediate steps between t19 and t22 dont themselves need approval, only as a system. I'm anticipating that single decisions that add a feature via multiple tasks need approval at the overall feature level, not between tasks."
+  4. **The T13 plan conflicted with a decision made later in the run.** Stage 5 planned to capture the round 3 pending items into the inbox, but those are agent-written (the round 3 summary), and 0034 keeps the inbox human-written. Nothing re-checked the plan against the new decisions. They stay with decision-loop directly.
 - **Also pending for these runs:** the round 3 decision loops (items 4.2, 4.3, 4.4, 4.6, and 4.5 on its own), doc sync (4.9), and the three unrun test cases (decision-loop, synthesis, task-planner). See [round-03-summary.md](../decisions/planning/round-03-summary.md).
 - **Done when:**
   - [ ] The item has been through every stage, with reviews. This is the **first task to use the testing framework** (T08): every stage's output is tested.
@@ -165,7 +166,7 @@ The working rules (how to pick, plan, test, review and approve tasks) live in [A
 - **Notes:** Added during T07. Likely the first script feature (0007). Other agents' skill locations can be added when they're used (0020).
 
 ### T19: Inbox folder v0
-- **Status:** ⏸ Awaiting review · **Size:** S · **Depends on:** none
+- **Status:** ☑ Done · **Size:** S · **Depends on:** none
 - **Decisions:** 0034, 0035 → partly resolves **D03**
 - **Goal:** Create the inbox as markdown data, so the user can start dropping files in.
 - **Done when:**
@@ -176,7 +177,7 @@ The working rules (how to pick, plan, test, review and approve tasks) live in [A
 - **Notes:** Added by task-planner from 0034–0035 (T13, inbox decision loop).
 
 ### T20: inbox-capture feature
-- **Status:** ⏸ Awaiting review · **Size:** S · **Depends on:** T19
+- **Status:** ☑ Done · **Size:** S · **Depends on:** T19
 - **Decisions:** 0034, 0035
 - **Goal:** A prompt feature that writes the user's words verbatim to a new inbox file, then commits and pushes only that file.
 - **Done when:**
@@ -186,7 +187,7 @@ The working rules (how to pick, plan, test, review and approve tasks) live in [A
 - **Notes:** Added by task-planner from 0034–0035 (T13, inbox decision loop).
 
 ### T21: inbox-triage feature
-- **Status:** ⏸ Awaiting review · **Size:** M · **Depends on:** T19
+- **Status:** ☑ Done · **Size:** M · **Depends on:** T19
 - **Decisions:** 0036, 0034
 - **Goal:** A prompt feature that proposes one route per inbox item, waits for the user's confirmation, runs the routes and archives the items.
 - **Done when:**
@@ -196,7 +197,7 @@ The working rules (how to pick, plan, test, review and approve tasks) live in [A
 - **Notes:** Added by task-planner from 0036 (T13, inbox decision loop).
 
 ### T22: Inbox count at session start
-- **Status:** ⏸ Awaiting review · **Size:** S · **Depends on:** T19
+- **Status:** ☑ Done · **Size:** S · **Depends on:** T19
 - **Decisions:** 0036, 0029
 - **Goal:** A session start reports how many items are waiting in the inbox, right after the review queue.
 - **Done when:**
