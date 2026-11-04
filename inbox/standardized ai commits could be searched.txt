@@ -1,0 +1,7 @@
+---
+status: parked
+parked: 2026-11-04
+park_note: "no point making a search interface with no interface"; held before a decision loop until there is one (triage 2026-11-04)
+---
+
+since commits are getting standardized language put into the commit message and title, what if we had a commit viewer, or update history viewer, that allowed for searching, statistics etc for the repo. Inspiration is stuff like the excellent version histroy of Factorio, the game. This would come later down the line, probably as a tab in the systems interface app, lo prio 
